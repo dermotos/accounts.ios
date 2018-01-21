@@ -42,6 +42,8 @@
 		078AC8D020143D6600DC7E1A /* AccountTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078AC8B42014397700DC7E1A /* AccountTypes.swift */; };
 		078AC8D120143D6600DC7E1A /* AccountProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078AC8AE201433DD00DC7E1A /* AccountProvider.swift */; };
 		078AC8D220143D6600DC7E1A /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078AC8B0201434BF00DC7E1A /* Account.swift */; };
+		078AC8D420143E5F00DC7E1A /* SavingAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078AC8D320143E5F00DC7E1A /* SavingAccount.swift */; };
+		078AC8D520143E5F00DC7E1A /* SavingAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078AC8D320143E5F00DC7E1A /* SavingAccount.swift */; };
 		079CF0782014197200B61E69 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079CF0772014197200B61E69 /* NotificationCenter.framework */; };
 		079CF07B2014197200B61E69 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079CF07A2014197200B61E69 /* TodayViewController.swift */; };
 		079CF07E2014197200B61E69 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079CF07C2014197200B61E69 /* MainInterface.storyboard */; };
@@ -209,6 +211,7 @@
 		078AC8C220143D5700DC7E1A /* AccountKit_WatchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AccountKit_WatchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		078AC8C420143D5700DC7E1A /* AccountKit_watchos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountKit_watchos.h; sourceTree = "<group>"; };
 		078AC8C520143D5700DC7E1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		078AC8D320143E5F00DC7E1A /* SavingAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingAccount.swift; sourceTree = "<group>"; };
 		079CF0752014197200B61E69 /* accounts.ios.todayextension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = accounts.ios.todayextension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		079CF0772014197200B61E69 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		079CF07A2014197200B61E69 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -439,6 +442,7 @@
 			isa = PBXGroup;
 			children = (
 				078AC8B7201439D700DC7E1A /* PaymentAccount.swift */,
+				078AC8D320143E5F00DC7E1A /* SavingAccount.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -955,6 +959,7 @@
 			files = (
 				078AC8AF201433DD00DC7E1A /* AccountProvider.swift in Sources */,
 				078AC8B8201439D700DC7E1A /* PaymentAccount.swift in Sources */,
+				078AC8D420143E5F00DC7E1A /* SavingAccount.swift in Sources */,
 				078AC8B52014397700DC7E1A /* AccountTypes.swift in Sources */,
 				078AC8B1201434BF00DC7E1A /* Account.swift in Sources */,
 			);
@@ -1010,6 +1015,7 @@
 			files = (
 				078AC8CF20143D6600DC7E1A /* PaymentAccount.swift in Sources */,
 				078AC8D220143D6600DC7E1A /* Account.swift in Sources */,
+				078AC8D520143E5F00DC7E1A /* SavingAccount.swift in Sources */,
 				078AC8D120143D6600DC7E1A /* AccountProvider.swift in Sources */,
 				078AC8D020143D6600DC7E1A /* AccountTypes.swift in Sources */,
 			);

@@ -79,4 +79,4 @@ enum AccountProviderError : Error {
     case parsingError(String?)
 }
 
-typealias AccountProviderResult = (Bool, AccountProviderError?, [Account]?) -> ()
+typealias AccountProviderResult = (Bool, AccountProviderError?, [AccountProtocol]?) -> ()

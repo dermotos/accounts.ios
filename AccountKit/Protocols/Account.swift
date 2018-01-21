@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Account {
+protocol AccountProtocol {
     var type : AccountType? { get set }
     var balanceInCents : Int64? { get set }
     var currency : Currency? { get set }
@@ -18,6 +18,6 @@ protocol Account {
     var alias : String? { get set }
 }
 
-protocol SavingAccount : Account {
+protocol SavingAccountProtocol : AccountProtocol {
     var linkedAccountId : String? { get set }
 }

@@ -1,6 +1,6 @@
 //
-//  File.swift
-//  AccountKit
+//  SavingAccount.swift
+//  accounts.ios
 //
 //  Created by Dermot O Sullivan on 21/1/18.
 //  Copyright © 2018 Rocky Desk Creations. All rights reserved.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class PaymentAccount : AccountProtocol {
+public class SavingAccount : SavingAccountProtocol {
     var type: AccountType?
     
     var balanceInCents: Int64?
@@ -23,8 +23,9 @@ public class PaymentAccount : AccountProtocol {
     
     var alias: String?
     
-
-    public required init() {
+    var linkedAccountId: String?
+    
+    public init() {
         
     }
     
