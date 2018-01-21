@@ -1,12 +1,18 @@
 
+
+def testing_pods 
+    pod 'Nimble', '~> 7.0.3'
+    pod 'Quick', '~> 1.2.0'
+end
+
 target 'accounts.iosTests' do
     platform :ios, '11.0'
 
     source 'https://github.com/CocoaPods/Specs.git'
     use_frameworks!
-
-    pod 'Nimble', '~> 6.0.0'
-    pod 'Quick', '~> 1.0.0'
+    
+    testing_pods
+    
 end
 
 
@@ -16,6 +22,5 @@ target 'AccountKitTests' do
     source 'https://github.com/CocoaPods/Specs.git'
     use_frameworks!
 
-    pod 'Nimble', '~> 6.0.0'
-    pod 'Quick', '~> 1.0.0'
+    testing_pods
 end

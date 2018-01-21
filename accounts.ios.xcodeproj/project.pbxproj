@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		075FB1EE201421C500A4EBAD /* AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075FB1E5201421C500A4EBAD /* AccountKit.framework */; };
-		075FB1F5201421C500A4EBAD /* AccountKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075FB1F4201421C500A4EBAD /* AccountKitTests.swift */; };
 		075FB1F7201421C500A4EBAD /* AccountKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 075FB1E7201421C500A4EBAD /* AccountKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		075FB1FA201421C500A4EBAD /* AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075FB1E5201421C500A4EBAD /* AccountKit.framework */; };
 		075FB1FB201421C500A4EBAD /* AccountKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 075FB1E5201421C500A4EBAD /* AccountKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		075FB204201421E400A4EBAD /* HelloWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075FB203201421E400A4EBAD /* HelloWorld.swift */; };
 		075FB2052014227900A4EBAD /* AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075FB1E5201421C500A4EBAD /* AccountKit.framework */; };
+		075FB2072014244A00A4EBAD /* accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = 075FB2062014244A00A4EBAD /* accounts.json */; };
 		076D0E9620141289001B4DD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D0E9520141289001B4DD6 /* AppDelegate.swift */; };
 		076D0E9820141289001B4DD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D0E9720141289001B4DD6 /* ViewController.swift */; };
 		076D0E9B20141289001B4DD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076D0E9920141289001B4DD6 /* Main.storyboard */; };
@@ -29,29 +27,18 @@
 		076D0ED120141289001B4DD6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D0ED020141289001B4DD6 /* ExtensionDelegate.swift */; };
 		076D0ED320141289001B4DD6 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D0ED220141289001B4DD6 /* NotificationController.swift */; };
 		076D0ED520141289001B4DD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 076D0ED420141289001B4DD6 /* Assets.xcassets */; };
+		078AC8A2201425ED00DC7E1A /* AccountKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078AC8A1201425ED00DC7E1A /* AccountKitTests.swift */; };
+		078AC8A4201425ED00DC7E1A /* AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075FB1E5201421C500A4EBAD /* AccountKit.framework */; };
+		078AC8AA20142B4000DC7E1A /* accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = 075FB2062014244A00A4EBAD /* accounts.json */; };
 		079CF0782014197200B61E69 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079CF0772014197200B61E69 /* NotificationCenter.framework */; };
 		079CF07B2014197200B61E69 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079CF07A2014197200B61E69 /* TodayViewController.swift */; };
 		079CF07E2014197200B61E69 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079CF07C2014197200B61E69 /* MainInterface.storyboard */; };
 		079CF0822014197200B61E69 /* accounts.ios.todayextension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 079CF0752014197200B61E69 /* accounts.ios.todayextension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		2AD4BE21131CAF9B3E44979B /* Pods_AccountKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733296EA7C22685978EDA981 /* Pods_AccountKitTests.framework */; };
 		3BFEA44004AF3BAE31E2993C /* Pods_accounts_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41B360A065468A2BA9D3D65 /* Pods_accounts_iosTests.framework */; };
+		CE38793E1BD69E15F18FAE7E /* Pods_AccountKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733296EA7C22685978EDA981 /* Pods_AccountKitTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		075FB1EF201421C500A4EBAD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 076D0E8A20141288001B4DD6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 075FB1E4201421C500A4EBAD;
-			remoteInfo = AccountKit;
-		};
-		075FB1F1201421C500A4EBAD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 076D0E8A20141288001B4DD6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 076D0E9120141289001B4DD6;
-			remoteInfo = accounts.ios;
-		};
 		075FB1F8201421C500A4EBAD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 076D0E8A20141288001B4DD6 /* Project object */;
@@ -86,6 +73,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 076D0EC820141289001B4DD6;
 			remoteInfo = "accounts.ios WatchKit Extension";
+		};
+		078AC8A5201425ED00DC7E1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 076D0E8A20141288001B4DD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 075FB1E4201421C500A4EBAD;
+			remoteInfo = AccountKit;
 		};
 		079CF0802014197200B61E69 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -147,10 +141,9 @@
 		075FB1E5201421C500A4EBAD /* AccountKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AccountKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		075FB1E7201421C500A4EBAD /* AccountKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountKit.h; sourceTree = "<group>"; };
 		075FB1E8201421C500A4EBAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		075FB1ED201421C500A4EBAD /* AccountKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccountKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		075FB1F4201421C500A4EBAD /* AccountKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountKitTests.swift; sourceTree = "<group>"; };
 		075FB1F6201421C500A4EBAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		075FB203201421E400A4EBAD /* HelloWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorld.swift; sourceTree = "<group>"; };
+		075FB2062014244A00A4EBAD /* accounts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = accounts.json; sourceTree = "<group>"; };
 		076D0E9220141289001B4DD6 /* accounts.ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = accounts.ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		076D0E9520141289001B4DD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		076D0E9720141289001B4DD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +168,9 @@
 		076D0ED420141289001B4DD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		076D0ED620141289001B4DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		076D0ED720141289001B4DD6 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		078AC89F201425ED00DC7E1A /* AccountKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccountKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		078AC8A1201425ED00DC7E1A /* AccountKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountKitTests.swift; sourceTree = "<group>"; };
+		078AC8A3201425ED00DC7E1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		079CF0752014197200B61E69 /* accounts.ios.todayextension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = accounts.ios.todayextension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		079CF0772014197200B61E69 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		079CF07A2014197200B61E69 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
@@ -193,15 +189,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		075FB1EA201421C500A4EBAD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				075FB1EE201421C500A4EBAD /* AccountKit.framework in Frameworks */,
-				2AD4BE21131CAF9B3E44979B /* Pods_AccountKitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +222,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		078AC89C201425ED00DC7E1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078AC8A4201425ED00DC7E1A /* AccountKit.framework in Frameworks */,
+				CE38793E1BD69E15F18FAE7E /* Pods_AccountKitTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		079CF0722014197200B61E69 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -257,9 +253,9 @@
 		075FB1E6201421C500A4EBAD /* AccountKit */ = {
 			isa = PBXGroup;
 			children = (
+				075FB2062014244A00A4EBAD /* accounts.json */,
 				075FB1E7201421C500A4EBAD /* AccountKit.h */,
 				075FB1E8201421C500A4EBAD /* Info.plist */,
-				075FB203201421E400A4EBAD /* HelloWorld.swift */,
 			);
 			path = AccountKit;
 			sourceTree = "<group>";
@@ -285,6 +281,7 @@
 				079CF0792014197200B61E69 /* accounts.ios.todayextension */,
 				075FB1E6201421C500A4EBAD /* AccountKit */,
 				075FB1F3201421C500A4EBAD /* AccountKitTests */,
+				078AC8A0201425ED00DC7E1A /* AccountKitTests */,
 				079CF0762014197200B61E69 /* Frameworks */,
 				076D0E9320141289001B4DD6 /* Products */,
 				78FFF5A8E4228EC7AC67E51D /* Pods */,
@@ -301,7 +298,7 @@
 				076D0EC920141289001B4DD6 /* accounts.ios WatchKit Extension.appex */,
 				079CF0752014197200B61E69 /* accounts.ios.todayextension.appex */,
 				075FB1E5201421C500A4EBAD /* AccountKit.framework */,
-				075FB1ED201421C500A4EBAD /* AccountKitTests.xctest */,
+				078AC89F201425ED00DC7E1A /* AccountKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -358,6 +355,15 @@
 				076D0ED720141289001B4DD6 /* PushNotificationPayload.apns */,
 			);
 			path = "accounts.ios WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		078AC8A0201425ED00DC7E1A /* AccountKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				078AC8A1201425ED00DC7E1A /* AccountKitTests.swift */,
+				078AC8A3201425ED00DC7E1A /* Info.plist */,
+			);
+			path = AccountKitTests;
 			sourceTree = "<group>";
 		};
 		079CF0762014197200B61E69 /* Frameworks */ = {
@@ -429,28 +435,6 @@
 			productName = AccountKit;
 			productReference = 075FB1E5201421C500A4EBAD /* AccountKit.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		075FB1EC201421C500A4EBAD /* AccountKitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 075FB202201421C500A4EBAD /* Build configuration list for PBXNativeTarget "AccountKitTests" */;
-			buildPhases = (
-				104C0B4118EDDD659CF9920F /* [CP] Check Pods Manifest.lock */,
-				075FB1E9201421C500A4EBAD /* Sources */,
-				075FB1EA201421C500A4EBAD /* Frameworks */,
-				075FB1EB201421C500A4EBAD /* Resources */,
-				B07D97B1ABEC36B1602B47D7 /* [CP] Embed Pods Frameworks */,
-				20661E53A8C1C069C988C461 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				075FB1F0201421C500A4EBAD /* PBXTargetDependency */,
-				075FB1F2201421C500A4EBAD /* PBXTargetDependency */,
-			);
-			name = AccountKitTests;
-			productName = AccountKitTests;
-			productReference = 075FB1ED201421C500A4EBAD /* AccountKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		076D0E9120141289001B4DD6 /* accounts.ios */ = {
 			isa = PBXNativeTarget;
@@ -549,6 +533,27 @@
 			productReference = 076D0EC920141289001B4DD6 /* accounts.ios WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		078AC89E201425ED00DC7E1A /* AccountKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 078AC8A7201425ED00DC7E1A /* Build configuration list for PBXNativeTarget "AccountKitTests" */;
+			buildPhases = (
+				0DC5B704E30AEB74CEC5FA2B /* [CP] Check Pods Manifest.lock */,
+				078AC89B201425ED00DC7E1A /* Sources */,
+				078AC89C201425ED00DC7E1A /* Frameworks */,
+				078AC89D201425ED00DC7E1A /* Resources */,
+				9C1DBC43FE73BCC5704E7691 /* [CP] Embed Pods Frameworks */,
+				41E6BF020B54B8BF06EF50AF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				078AC8A6201425ED00DC7E1A /* PBXTargetDependency */,
+			);
+			name = AccountKitTests;
+			productName = AccountKitTests;
+			productReference = 078AC89F201425ED00DC7E1A /* AccountKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		079CF0742014197200B61E69 /* accounts.ios.todayextension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 079CF0852014197200B61E69 /* Build configuration list for PBXNativeTarget "accounts.ios.todayextension" */;
@@ -581,11 +586,6 @@
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
-					075FB1EC201421C500A4EBAD = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 076D0E9120141289001B4DD6;
-					};
 					076D0E9120141289001B4DD6 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -605,6 +605,10 @@
 						ProvisioningStyle = Automatic;
 					};
 					076D0EC820141289001B4DD6 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					078AC89E201425ED00DC7E1A = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -634,7 +638,7 @@
 				076D0EC820141289001B4DD6 /* accounts.ios WatchKit Extension */,
 				079CF0742014197200B61E69 /* accounts.ios.todayextension */,
 				075FB1E4201421C500A4EBAD /* AccountKit */,
-				075FB1EC201421C500A4EBAD /* AccountKitTests */,
+				078AC89E201425ED00DC7E1A /* AccountKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -644,13 +648,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		075FB1EB201421C500A4EBAD /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				075FB2072014244A00A4EBAD /* accounts.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,6 +693,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		078AC89D201425ED00DC7E1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078AC8AA20142B4000DC7E1A /* accounts.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		079CF0732014197200B61E69 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -726,7 +732,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-accounts.iosTests/Pods-accounts.iosTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		104C0B4118EDDD659CF9920F /* [CP] Check Pods Manifest.lock */ = {
+		0DC5B704E30AEB74CEC5FA2B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -744,7 +750,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		20661E53A8C1C069C988C461 /* [CP] Copy Pods Resources */ = {
+		41E6BF020B54B8BF06EF50AF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -774,7 +780,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-accounts.iosTests/Pods-accounts.iosTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B07D97B1ABEC36B1602B47D7 /* [CP] Embed Pods Frameworks */ = {
+		9C1DBC43FE73BCC5704E7691 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -819,15 +825,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				075FB204201421E400A4EBAD /* HelloWorld.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		075FB1E9201421C500A4EBAD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				075FB1F5201421C500A4EBAD /* AccountKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -866,6 +863,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		078AC89B201425ED00DC7E1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078AC8A2201425ED00DC7E1A /* AccountKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		079CF0712014197200B61E69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -877,16 +882,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		075FB1F0201421C500A4EBAD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 075FB1E4201421C500A4EBAD /* AccountKit */;
-			targetProxy = 075FB1EF201421C500A4EBAD /* PBXContainerItemProxy */;
-		};
-		075FB1F2201421C500A4EBAD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 076D0E9120141289001B4DD6 /* accounts.ios */;
-			targetProxy = 075FB1F1201421C500A4EBAD /* PBXContainerItemProxy */;
-		};
 		075FB1F9201421C500A4EBAD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 075FB1E4201421C500A4EBAD /* AccountKit */;
@@ -911,6 +906,11 @@
 			isa = PBXTargetDependency;
 			target = 076D0EC820141289001B4DD6 /* accounts.ios WatchKit Extension */;
 			targetProxy = 076D0ECB20141289001B4DD6 /* PBXContainerItemProxy */;
+		};
+		078AC8A6201425ED00DC7E1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 075FB1E4201421C500A4EBAD /* AccountKit */;
+			targetProxy = 078AC8A5201425ED00DC7E1A /* PBXContainerItemProxy */;
 		};
 		079CF0812014197200B61E69 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -970,6 +970,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = AccountKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.rockydesk.nl.AccountKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -997,6 +998,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = AccountKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = net.rockydesk.nl.AccountKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -1005,40 +1007,6 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		075FB1FE201421C500A4EBAD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 150851527CE5C9E3BCAB5353 /* Pods-AccountKitTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M3YE8Y5432;
-				INFOPLIST_FILE = AccountKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.rockydesk.nl.AccountKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/accounts.ios.app/accounts.ios";
-			};
-			name = Debug;
-		};
-		075FB1FF201421C500A4EBAD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C14F50BF8FF2D3E8B7FBFAA0 /* Pods-AccountKitTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = M3YE8Y5432;
-				INFOPLIST_FILE = AccountKitTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = net.rockydesk.nl.AccountKitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/accounts.ios.app/accounts.ios";
 			};
 			name = Release;
 		};
@@ -1163,7 +1131,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Debug;
 		};
@@ -1181,7 +1149,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};
@@ -1200,7 +1168,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Debug;
 		};
@@ -1219,7 +1187,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
 			};
 			name = Release;
 		};
@@ -1231,6 +1199,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3YE8Y5432;
 				INFOPLIST_FILE = accounts.ios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.rockydesk.nl.accounts-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1247,6 +1216,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3YE8Y5432;
 				INFOPLIST_FILE = accounts.ios/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.rockydesk.nl.accounts-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1323,12 +1293,43 @@
 			};
 			name = Release;
 		};
+		078AC8A8201425ED00DC7E1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 150851527CE5C9E3BCAB5353 /* Pods-AccountKitTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3YE8Y5432;
+				INFOPLIST_FILE = AccountKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.rockydesk.nl.AccountKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		078AC8A9201425ED00DC7E1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C14F50BF8FF2D3E8B7FBFAA0 /* Pods-AccountKitTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3YE8Y5432;
+				INFOPLIST_FILE = AccountKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = net.rockydesk.nl.AccountKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		079CF0832014197200B61E69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3YE8Y5432;
 				INFOPLIST_FILE = accounts.ios.todayextension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.rockydesk.nl.accounts-ios.accounts-ios-todayextension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1344,6 +1345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3YE8Y5432;
 				INFOPLIST_FILE = accounts.ios.todayextension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.rockydesk.nl.accounts-ios.accounts-ios-todayextension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1361,15 +1363,6 @@
 			buildConfigurations = (
 				075FB1FC201421C500A4EBAD /* Debug */,
 				075FB1FD201421C500A4EBAD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		075FB202201421C500A4EBAD /* Build configuration list for PBXNativeTarget "AccountKitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				075FB1FE201421C500A4EBAD /* Debug */,
-				075FB1FF201421C500A4EBAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1424,6 +1417,15 @@
 			buildConfigurations = (
 				076D0EE920141289001B4DD6 /* Debug */,
 				076D0EEA20141289001B4DD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		078AC8A7201425ED00DC7E1A /* Build configuration list for PBXNativeTarget "AccountKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				078AC8A8201425ED00DC7E1A /* Debug */,
+				078AC8A9201425ED00DC7E1A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
