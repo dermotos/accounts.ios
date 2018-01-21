@@ -9,6 +9,16 @@ def testing_pods
     pod 'Quick', '~> 1.2.0'
 end
 
+
+target 'accounts.ios' do
+    platform :ios, '11.0'
+
+    source 'https://github.com/CocoaPods/Specs.git'
+    use_frameworks!
+    
+    testing_pods
+end
+
 target 'accounts.iosTests' do
     platform :ios, '11.0'
 
@@ -16,7 +26,6 @@ target 'accounts.iosTests' do
     use_frameworks!
     
     testing_pods
-    
 end
 
 
