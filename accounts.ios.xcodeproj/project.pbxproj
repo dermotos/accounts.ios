@@ -16,12 +16,17 @@
 		07585F0320147A3000296984 /* SavingAccountCellViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07585F0220147A3000296984 /* SavingAccountCellViewModelSpec.swift */; };
 		07585F0520147AC000296984 /* SavingAccountCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07585F0420147AC000296984 /* SavingAccountCellViewModel.swift */; };
 		07585F0620147AC000296984 /* SavingAccountCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07585F0420147AC000296984 /* SavingAccountCellViewModel.swift */; };
+		07585F10201485FD00296984 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07585F0F201485FD00296984 /* MainTableViewController.swift */; };
+		07585F132014881D00296984 /* PaymentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07585F122014881D00296984 /* PaymentCell.swift */; };
+		07585F1520148A5500296984 /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07585F1420148A5500296984 /* RoundedCornerView.swift */; };
+		07585F1720148C4800296984 /* AccountDataSourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07585F1620148C4800296984 /* AccountDataSourceSpec.swift */; };
+		07585F1920148C9200296984 /* AccountDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07585F1820148C9200296984 /* AccountDataSource.swift */; };
+		07585F1A20148C9200296984 /* AccountDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07585F1820148C9200296984 /* AccountDataSource.swift */; };
 		075FB1F7201421C500A4EBAD /* AccountKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 075FB1E7201421C500A4EBAD /* AccountKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		075FB1FA201421C500A4EBAD /* AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075FB1E5201421C500A4EBAD /* AccountKit.framework */; };
 		075FB1FB201421C500A4EBAD /* AccountKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 075FB1E5201421C500A4EBAD /* AccountKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		075FB2052014227900A4EBAD /* AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075FB1E5201421C500A4EBAD /* AccountKit.framework */; };
 		076D0E9620141289001B4DD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D0E9520141289001B4DD6 /* AppDelegate.swift */; };
-		076D0E9820141289001B4DD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D0E9720141289001B4DD6 /* ViewController.swift */; };
 		076D0E9B20141289001B4DD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076D0E9920141289001B4DD6 /* Main.storyboard */; };
 		076D0E9D20141289001B4DD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 076D0E9C20141289001B4DD6 /* Assets.xcassets */; };
 		076D0EA020141289001B4DD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 076D0E9E20141289001B4DD6 /* LaunchScreen.storyboard */; };
@@ -199,6 +204,11 @@
 		07585F0220147A3000296984 /* SavingAccountCellViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingAccountCellViewModelSpec.swift; sourceTree = "<group>"; };
 		07585F0420147AC000296984 /* SavingAccountCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingAccountCellViewModel.swift; sourceTree = "<group>"; };
 		07585F0A2014803800296984 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		07585F0F201485FD00296984 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		07585F122014881D00296984 /* PaymentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCell.swift; sourceTree = "<group>"; };
+		07585F1420148A5500296984 /* RoundedCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
+		07585F1620148C4800296984 /* AccountDataSourceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDataSourceSpec.swift; sourceTree = "<group>"; };
+		07585F1820148C9200296984 /* AccountDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDataSource.swift; sourceTree = "<group>"; };
 		075FB1E5201421C500A4EBAD /* AccountKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AccountKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		075FB1E7201421C500A4EBAD /* AccountKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountKit.h; sourceTree = "<group>"; };
 		075FB1E8201421C500A4EBAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -206,7 +216,6 @@
 		075FB1F6201421C500A4EBAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		076D0E9220141289001B4DD6 /* accounts.ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = accounts.ios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		076D0E9520141289001B4DD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		076D0E9720141289001B4DD6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		076D0E9A20141289001B4DD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		076D0E9C20141289001B4DD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		076D0E9F20141289001B4DD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -362,6 +371,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		07585F112014880700296984 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				07585F122014881D00296984 /* PaymentCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		075FB1E6201421C500A4EBAD /* AccountKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -389,6 +406,7 @@
 				07585F002014743300296984 /* PaymentAccountCellViewModelSpec.swift */,
 				07585F0220147A3000296984 /* SavingAccountCellViewModelSpec.swift */,
 				075FB1F6201421C500A4EBAD /* Info.plist */,
+				07585F1620148C4800296984 /* AccountDataSourceSpec.swift */,
 			);
 			path = AccountKitTests;
 			sourceTree = "<group>";
@@ -430,12 +448,14 @@
 		076D0E9420141289001B4DD6 /* accounts.ios */ = {
 			isa = PBXGroup;
 			children = (
+				07585F112014880700296984 /* Cells */,
 				076D0E9520141289001B4DD6 /* AppDelegate.swift */,
-				076D0E9720141289001B4DD6 /* ViewController.swift */,
 				076D0E9920141289001B4DD6 /* Main.storyboard */,
+				07585F0F201485FD00296984 /* MainTableViewController.swift */,
 				076D0E9C20141289001B4DD6 /* Assets.xcassets */,
 				076D0E9E20141289001B4DD6 /* LaunchScreen.storyboard */,
 				076D0EA120141289001B4DD6 /* Info.plist */,
+				07585F1420148A5500296984 /* RoundedCornerView.swift */,
 			);
 			path = accounts.ios;
 			sourceTree = "<group>";
@@ -504,6 +524,7 @@
 				078AC8B7201439D700DC7E1A /* PaymentAccount.swift */,
 				078AC8D320143E5F00DC7E1A /* SavingAccount.swift */,
 				078AC8D62014405B00DC7E1A /* AccountProvider.swift */,
+				07585F1820148C9200296984 /* AccountDataSource.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -1046,15 +1067,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AccountKitTests/Pods-AccountKitTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON-iOS/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON-iOS/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1134,14 +1155,10 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-accounts.ios/Pods-accounts.ios-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON-iOS/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1164,6 +1181,7 @@
 				078AC8B52014397700DC7E1A /* AccountTypes.swift in Sources */,
 				07585EFC20146BD600296984 /* CurrencyFormatExtensions.swift in Sources */,
 				078AC8D72014405B00DC7E1A /* AccountProvider.swift in Sources */,
+				07585F1920148C9200296984 /* AccountDataSource.swift in Sources */,
 				078AC8B1201434BF00DC7E1A /* AccountProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1172,8 +1190,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				076D0E9820141289001B4DD6 /* ViewController.swift in Sources */,
+				07585F132014881D00296984 /* PaymentCell.swift in Sources */,
+				07585F10201485FD00296984 /* MainTableViewController.swift in Sources */,
 				076D0E9620141289001B4DD6 /* AppDelegate.swift in Sources */,
+				07585F1520148A5500296984 /* RoundedCornerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1208,6 +1228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07585EFF20146D1600296984 /* CurrencyFormatterSpec.swift in Sources */,
+				07585F1720148C4800296984 /* AccountDataSourceSpec.swift in Sources */,
 				078AC8AD201433B500DC7E1A /* AccountKitDataSourceSpec.swift in Sources */,
 				07585F012014743300296984 /* PaymentAccountCellViewModelSpec.swift in Sources */,
 				078AC8AC201432A200DC7E1A /* AccountProviderSpec.swift in Sources */,
@@ -1227,6 +1248,7 @@
 				078AC8D120143D6600DC7E1A /* AccountProviderProtocol.swift in Sources */,
 				07585EFD20146BD600296984 /* CurrencyFormatExtensions.swift in Sources */,
 				078AC8D82014405B00DC7E1A /* AccountProvider.swift in Sources */,
+				07585F1A20148C9200296984 /* AccountDataSource.swift in Sources */,
 				078AC8D020143D6600DC7E1A /* AccountTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,7 +16,7 @@ target 'accounts.ios' do
     source 'https://github.com/CocoaPods/Specs.git'
     use_frameworks!
     
-    testing_pods
+    base_pods
 end
 
 target 'accounts.iosTests' do
