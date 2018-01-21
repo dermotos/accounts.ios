@@ -67,6 +67,32 @@ class AccountKitProviderSpec: QuickSpec {
                 expect(returnedSuccessValue).toEventually(beTrue())
             }
             
+            it("if valid, it should callback with no errors") {
+                let testArticle = AccountProvider(with: testJSONString)
+                var returnedError : Error!
+                testArticle?.getAccounts(withCompletion: { (success, error, accounts) in
+                    returnedError = error
+                })
+                expect(returnedError).toEventually(beNil())
+            }
+            
+            it("if valid, it should callback with deserialized account data") {
+                let testArticle = AccountProvider(with: testJSONString)
+                var returnedAccountData : [AccountProtocol]!
+                testArticle?.getAccounts(withCompletion: { (success, error, accounts) in
+                    returnedAccountData = accounts
+                })
+                expect(returnedAccountData).toEventuallyNot(beNil())
+            }
+            
+            it("if valid, it should callback with 3 accounts") {
+                let testArticle = AccountProvider(with: testJSONString)
+                var returnedAccountData : [AccountProtocol]!
+                testArticle?.getAccounts(withCompletion: { (success, error, accounts) in
+                    returnedAccountData = accounts
+                })
+                expect(returnedAccountData.count).toEventually(equal(3))
+            } 
             
         }
     }
