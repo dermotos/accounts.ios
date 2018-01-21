@@ -22,6 +22,10 @@
 		076D0ED120141289001B4DD6 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D0ED020141289001B4DD6 /* ExtensionDelegate.swift */; };
 		076D0ED320141289001B4DD6 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076D0ED220141289001B4DD6 /* NotificationController.swift */; };
 		076D0ED520141289001B4DD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 076D0ED420141289001B4DD6 /* Assets.xcassets */; };
+		079CF0782014197200B61E69 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079CF0772014197200B61E69 /* NotificationCenter.framework */; };
+		079CF07B2014197200B61E69 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079CF07A2014197200B61E69 /* TodayViewController.swift */; };
+		079CF07E2014197200B61E69 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079CF07C2014197200B61E69 /* MainInterface.storyboard */; };
+		079CF0822014197200B61E69 /* accounts.ios.todayextension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 079CF0752014197200B61E69 /* accounts.ios.todayextension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,13 @@
 			remoteGlobalIDString = 076D0EC820141289001B4DD6;
 			remoteInfo = "accounts.ios WatchKit Extension";
 		};
+		079CF0802014197200B61E69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 076D0E8A20141288001B4DD6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 079CF0742014197200B61E69;
+			remoteInfo = accounts.ios.todayextension;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -76,6 +87,17 @@
 				076D0EBB20141289001B4DD6 /* accounts.ios WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		079CF0862014197200B61E69 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				079CF0822014197200B61E69 /* accounts.ios.todayextension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -105,6 +127,11 @@
 		076D0ED420141289001B4DD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		076D0ED620141289001B4DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		076D0ED720141289001B4DD6 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		079CF0752014197200B61E69 /* accounts.ios.todayextension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = accounts.ios.todayextension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		079CF0772014197200B61E69 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		079CF07A2014197200B61E69 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		079CF07D2014197200B61E69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		079CF07F2014197200B61E69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +163,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		079CF0722014197200B61E69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079CF0782014197200B61E69 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -147,6 +182,8 @@
 				076D0EB420141289001B4DD6 /* accounts.iosUITests */,
 				076D0EBE20141289001B4DD6 /* accounts.ios WatchKit App */,
 				076D0ECD20141289001B4DD6 /* accounts.ios WatchKit Extension */,
+				079CF0792014197200B61E69 /* accounts.ios.todayextension */,
+				079CF0762014197200B61E69 /* Frameworks */,
 				076D0E9320141289001B4DD6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -159,6 +196,7 @@
 				076D0EB120141289001B4DD6 /* accounts.iosUITests.xctest */,
 				076D0EBA20141289001B4DD6 /* accounts.ios WatchKit App.app */,
 				076D0EC920141289001B4DD6 /* accounts.ios WatchKit Extension.appex */,
+				079CF0752014197200B61E69 /* accounts.ios.todayextension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,6 +255,24 @@
 			path = "accounts.ios WatchKit Extension";
 			sourceTree = "<group>";
 		};
+		079CF0762014197200B61E69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				079CF0772014197200B61E69 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		079CF0792014197200B61E69 /* accounts.ios.todayextension */ = {
+			isa = PBXGroup;
+			children = (
+				079CF07A2014197200B61E69 /* TodayViewController.swift */,
+				079CF07C2014197200B61E69 /* MainInterface.storyboard */,
+				079CF07F2014197200B61E69 /* Info.plist */,
+			);
+			path = accounts.ios.todayextension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -228,11 +284,13 @@
 				076D0E8F20141289001B4DD6 /* Frameworks */,
 				076D0E9020141289001B4DD6 /* Resources */,
 				076D0EE120141289001B4DD6 /* Embed Watch Content */,
+				079CF0862014197200B61E69 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				076D0EBD20141289001B4DD6 /* PBXTargetDependency */,
+				079CF0812014197200B61E69 /* PBXTargetDependency */,
 			);
 			name = accounts.ios;
 			productName = accounts.ios;
@@ -309,6 +367,23 @@
 			productReference = 076D0EC920141289001B4DD6 /* accounts.ios WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		079CF0742014197200B61E69 /* accounts.ios.todayextension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 079CF0852014197200B61E69 /* Build configuration list for PBXNativeTarget "accounts.ios.todayextension" */;
+			buildPhases = (
+				079CF0712014197200B61E69 /* Sources */,
+				079CF0722014197200B61E69 /* Frameworks */,
+				079CF0732014197200B61E69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = accounts.ios.todayextension;
+			productName = accounts.ios.todayextension;
+			productReference = 079CF0752014197200B61E69 /* accounts.ios.todayextension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -341,6 +416,10 @@
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
+					079CF0742014197200B61E69 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 076D0E8D20141288001B4DD6 /* Build configuration list for PBXProject "accounts.ios" */;
@@ -361,6 +440,7 @@
 				076D0EB020141289001B4DD6 /* accounts.iosUITests */,
 				076D0EB920141289001B4DD6 /* accounts.ios WatchKit App */,
 				076D0EC820141289001B4DD6 /* accounts.ios WatchKit Extension */,
+				079CF0742014197200B61E69 /* accounts.ios.todayextension */,
 			);
 		};
 /* End PBXProject section */
@@ -407,6 +487,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		079CF0732014197200B61E69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079CF07E2014197200B61E69 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -445,6 +533,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		079CF0712014197200B61E69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				079CF07B2014197200B61E69 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -467,6 +563,11 @@
 			isa = PBXTargetDependency;
 			target = 076D0EC820141289001B4DD6 /* accounts.ios WatchKit Extension */;
 			targetProxy = 076D0ECB20141289001B4DD6 /* PBXContainerItemProxy */;
+		};
+		079CF0812014197200B61E69 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 079CF0742014197200B61E69 /* accounts.ios.todayextension */;
+			targetProxy = 079CF0802014197200B61E69 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -493,6 +594,14 @@
 				076D0EC020141289001B4DD6 /* Base */,
 			);
 			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		079CF07C2014197200B61E69 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				079CF07D2014197200B61E69 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -682,6 +791,7 @@
 		076D0EE320141289001B4DD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3YE8Y5432;
@@ -697,6 +807,7 @@
 		076D0EE420141289001B4DD6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3YE8Y5432;
@@ -775,6 +886,36 @@
 			};
 			name = Release;
 		};
+		079CF0832014197200B61E69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3YE8Y5432;
+				INFOPLIST_FILE = accounts.ios.todayextension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.rockydesk.nl.accounts-ios.accounts-ios-todayextension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		079CF0842014197200B61E69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M3YE8Y5432;
+				INFOPLIST_FILE = accounts.ios.todayextension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.rockydesk.nl.accounts-ios.accounts-ios-todayextension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -828,6 +969,15 @@
 			buildConfigurations = (
 				076D0EE920141289001B4DD6 /* Debug */,
 				076D0EEA20141289001B4DD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		079CF0852014197200B61E69 /* Build configuration list for PBXNativeTarget "accounts.ios.todayextension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				079CF0832014197200B61E69 /* Debug */,
+				079CF0842014197200B61E69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
