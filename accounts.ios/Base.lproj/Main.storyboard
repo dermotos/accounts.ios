@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="paymentAccountCell" rowHeight="180" id="Dza-D0-1Qx" customClass="PaymentCell" customModule="accounts_ios" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="paymentCell" rowHeight="180" id="Dza-D0-1Qx" customClass="PaymentCell" customModule="accounts_ios" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="180"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Dza-D0-1Qx" id="Xah-Kp-Gj4">
@@ -98,8 +98,15 @@
                                         <constraint firstItem="8oO-X3-ofd" firstAttribute="top" secondItem="Xah-Kp-Gj4" secondAttribute="top" constant="8" id="xgd-6G-P2M"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="accountNumberLabel" destination="uHn-RI-jbo" id="bI7-Cw-pkZ"/>
+                                    <outlet property="amountLabel" destination="59J-OZ-pj6" id="e7y-ov-q1P"/>
+                                    <outlet property="ibanLabel" destination="JE0-IU-gdz" id="ldb-tr-kDY"/>
+                                    <outlet property="primaryLabel" destination="Hob-MZ-lOd" id="enV-tZ-Xhh"/>
+                                    <outlet property="secondaryLabel" destination="ztl-5x-Qku" id="hBx-4P-jrm"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="savingAccountCell" rowHeight="129" id="SDd-YJ-CGQ" customClass="PaymentCell" customModule="accounts_ios" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="savingCell" rowHeight="129" id="SDd-YJ-CGQ" customClass="SavingCell" customModule="accounts_ios" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="208" width="375" height="129"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SDd-YJ-CGQ" id="EOx-LJ-Vyt">
@@ -177,6 +184,13 @@
                                         <constraint firstAttribute="trailing" secondItem="l2H-jZ-OZc" secondAttribute="trailing" constant="8" id="w7O-zp-zsp"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="accountNumberLabel" destination="k3f-Qc-Y12" id="S7t-b9-iO8"/>
+                                    <outlet property="amountLabel" destination="cp4-fp-OTI" id="fPd-ru-1F6"/>
+                                    <outlet property="ibanLabel" destination="BHm-Zm-YsM" id="Qo3-b8-p1j"/>
+                                    <outlet property="primaryLabel" destination="Y2u-hd-Juv" id="yTj-sf-9BZ"/>
+                                    <outlet property="secondaryLabel" destination="3Of-wa-IQj" id="foT-xX-P6a"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

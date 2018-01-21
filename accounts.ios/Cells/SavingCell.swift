@@ -1,5 +1,5 @@
 //
-//  PaymentCell.swift
+//  SavingCell.swift
 //  accounts.ios
 //
 //  Created by Dermot O Sullivan on 21/1/18.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class PaymentCell : UITableViewCell {
+class SavingCell : UITableViewCell {
     
     @IBOutlet weak var primaryLabel: UILabel!
     @IBOutlet weak var secondaryLabel: UILabel!

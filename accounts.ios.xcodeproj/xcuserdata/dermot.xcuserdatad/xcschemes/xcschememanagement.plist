@@ -7,7 +7,7 @@
 		<key>AccountKit.WatchOS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>15</integer>
+			<integer>16</integer>
 		</dict>
 		<key>AccountKit.xcscheme</key>
 		<dict>
@@ -17,7 +17,7 @@
 		<key>AccountKitTests.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>14</integer>
+			<integer>15</integer>
 		</dict>
 		<key>AccountKit_watchos.xcscheme</key>
 		<dict>

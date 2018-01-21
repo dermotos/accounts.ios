@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-protocol AccountProtocol {
+public protocol AccountProtocol {
     var type : AccountType { get set }
     var balanceInCents : Int64 { get set }
     var currency : Currency { get set }
@@ -23,9 +23,9 @@ protocol AccountProtocol {
     init?(withJSON json:JSON)
 }
 
-protocol PaymentAccountProtocol : AccountProtocol { }
+public protocol PaymentAccountProtocol : AccountProtocol { }
 
-protocol SavingAccountProtocol : AccountProtocol {
+public protocol SavingAccountProtocol : AccountProtocol {
     var linkedAccountId : String { get set }
     var productName : String { get set }
     var productType : Int { get set }
@@ -34,5 +34,5 @@ protocol SavingAccountProtocol : AccountProtocol {
 }
 
 
-protocol CreditCardAccountProtocol : AccountProtocol { }
+public protocol CreditCardAccountProtocol : AccountProtocol { }
 

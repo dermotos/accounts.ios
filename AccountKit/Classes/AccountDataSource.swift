@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol AccountDataSourceProtocol : class {
+public protocol AccountDataSourceProtocol : class {
     
     init?(withAccounts accounts:[AccountProtocol])
     
@@ -20,12 +20,12 @@ protocol AccountDataSourceProtocol : class {
     
 }
 
-class AccountDataSource : AccountDataSourceProtocol {
+public class AccountDataSource : AccountDataSourceProtocol {
     
     private lazy var viewModels = [[AccountCellViewModel]]()
     private lazy var accountTypes = [AccountType]()
     
-    required init?(withAccounts accounts: [AccountProtocol]) {
+    required public init?(withAccounts accounts: [AccountProtocol]) {
         
         for account in accounts {
             // Create the view model from the account data:
@@ -51,19 +51,19 @@ class AccountDataSource : AccountDataSourceProtocol {
         }
     }
     
-    func numberOfAccountGroups() -> Int {
+    public func numberOfAccountGroups() -> Int {
         return accountTypes.count
     }
     
-    func numberOfAccountsInGroup(atIndex groupIndex: Int) -> Int {
+    public func numberOfAccountsInGroup(atIndex groupIndex: Int) -> Int {
         return viewModels[groupIndex].count
     }
     
-    func typeOfAccount(atIndex groupIndex: Int) -> AccountType {
+    public func typeOfAccount(atIndex groupIndex: Int) -> AccountType {
         return accountTypes[groupIndex]
     }
     
-    func viewModel(forGroup groupIndex: Int, atIndex itemIndex: Int) -> AccountCellViewModel {
+    public func viewModel(forGroup groupIndex: Int, atIndex itemIndex: Int) -> AccountCellViewModel {
         return viewModels[groupIndex][itemIndex]
     }
     

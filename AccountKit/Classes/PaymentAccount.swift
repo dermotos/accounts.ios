@@ -10,23 +10,23 @@ import Foundation
 import SwiftyJSON
 
 public class PaymentAccount : PaymentAccountProtocol {
-    var balanceInCents: Int64
+    public var balanceInCents: Int64
     
-    var currency: Currency
+    public var currency: Currency
     
-    var isVisible: Bool
+    public var isVisible: Bool
     
-    var accountId: String
+    public var accountId: String
     
-    var accountNumber: String
+    public var accountNumber: String
     
-    var accountName: String
+    public var accountName: String
     
-    var alias: String
+    public var alias: String
     
-    var type: AccountType
+    public var type: AccountType
     
-    var iban : String
+    public var iban : String
     
     public required init?(withJSON json:JSON) {
 

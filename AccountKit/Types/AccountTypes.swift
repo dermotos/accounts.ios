@@ -62,8 +62,8 @@ public enum AccountType: RawRepresentable, CustomStringConvertible {
     
     public var description: String {
         switch self {
-        case .payment: return "Payment Account"
-        case .saving: return "Saving Account"
+        case .payment: return "Payment"
+        case .saving: return "Saving"
         case .creditCard: return "Credit Card"
         }
     }
@@ -75,4 +75,4 @@ public enum AccountProviderError : Error {
     case parsingError(String?)
 }
 
-typealias AccountProviderResult = (Bool, AccountProviderError?, [AccountProtocol]?) -> ()
+public typealias AccountProviderResult = (Bool, AccountProviderError?, [AccountProtocol]?) -> ()

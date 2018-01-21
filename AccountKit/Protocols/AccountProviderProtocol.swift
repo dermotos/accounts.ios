@@ -9,9 +9,9 @@
 import Foundation
 
 
-typealias JSONString = String
+public typealias JSONString = String
 
-protocol AccountProviderProtocol {
+public protocol AccountProviderProtocol {
     
     init?(with json:JSONString)
     func getAccounts(withCompletion completion:AccountProviderResult)

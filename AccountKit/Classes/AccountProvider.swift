@@ -9,14 +9,14 @@
 import Foundation
 import SwiftyJSON
 
-class AccountProvider : AccountProviderProtocol {
+public class AccountProvider : AccountProviderProtocol {
     
     let data :JSON
     var errorMessage : String?
 
     lazy var accounts = [AccountProtocol]()
     
-    required init?(with jsonString: JSONString) {
+    required public init?(with jsonString: JSONString) {
         data = JSON(parseJSON: jsonString)
         if !dataIsValid { return nil }
     }
@@ -70,7 +70,7 @@ class AccountProvider : AccountProviderProtocol {
         }
     }
     
-    func getAccounts(withCompletion completion: AccountProviderResult) {
+    public func getAccounts(withCompletion completion: AccountProviderResult) {
     /* Note:
          Whilst this code is computationaly simple and could execute synchronously, returning the data immediately;
          such a setup is uncommon in the real world as we often have to wait for network calls, etc.

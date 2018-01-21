@@ -13,10 +13,10 @@ import SwiftyJSON
 
 @testable import AccountKit
 
-class AccountKitDataSourceSpec: QuickSpec {
+class AccountKitDataSourceFileSpec: QuickSpec {
     
     override func spec() {
-        describe("The datasource") {
+        describe("The datasource file") {
             describe("should") {
                 it("exist as a json file") {
                     let testBundle = Bundle(for: type(of: self))
