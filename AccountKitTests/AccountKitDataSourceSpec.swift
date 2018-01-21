@@ -14,7 +14,7 @@ import SwiftyJSON
 @testable import AccountKit
 
 
-class AccountKitSpec: QuickSpec {
+class AccountKitDataSourceSpec: QuickSpec {
     
     override func spec() {
         describe("The datasource") {
