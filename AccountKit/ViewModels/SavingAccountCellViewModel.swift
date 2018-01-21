@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SavingAccountCellViewModel {
+class SavingAccountCellViewModel : AccountCellViewModel {
     var primaryAccountLabelText : String
     var secondaryAccountLabelText : String
     var formattedBalance : String

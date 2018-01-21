@@ -13,7 +13,6 @@ import SwiftyJSON
 
 @testable import AccountKit
 
-
 class AccountKitDataSourceSpec: QuickSpec {
     
     override func spec() {

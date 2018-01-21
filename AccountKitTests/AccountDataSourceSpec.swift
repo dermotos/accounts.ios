@@ -18,10 +18,12 @@ class AccountDataSourceSpec : QuickSpec {
     override func spec() {
         
         var testSavingAccount :SavingAccount!
+        var testPaymentAccount :PaymentAccount!
+        var secondTestPaymentAccount :PaymentAccount!
         
         beforeEach {
             let testBundle = Bundle(for: type(of: self))
-            let filePath = testBundle.path(forResource: "testsaving", ofType: "json")
+            var filePath = testBundle.path(forResource: "testsaving", ofType: "json")
             expect(filePath).toNot(beNil())
             do {
                 let text = try String(contentsOfFile: filePath!)
@@ -31,44 +33,82 @@ class AccountDataSourceSpec : QuickSpec {
             catch {
                 fail("Failed to load file contents located at \(filePath!)")
             }
+            
+            filePath = testBundle.path(forResource: "testpayment", ofType: "json")
+            expect(filePath).toNot(beNil())
+            do {
+                let text = try String(contentsOfFile: filePath!)
+                let json = JSON(parseJSON: text)
+                testPaymentAccount = PaymentAccount(withJSON: json)
+            }
+            catch {
+                fail("Failed to load file contents located at \(filePath!)")
+            }
+            
+            filePath = testBundle.path(forResource: "testpayment", ofType: "json")
+            expect(filePath).toNot(beNil())
+            do {
+                let text = try String(contentsOfFile: filePath!)
+                let json = JSON(parseJSON: text)
+                secondTestPaymentAccount = PaymentAccount(withJSON: json)
+            }
+            catch {
+                fail("Failed to load file contents located at \(filePath!)")
+            }
         }
         
-        describe("SavingAccountCellViewModel") {
-            it("should initialize from a SavingAccount object") {
-                let viewModel = SavingAccountCellViewModel(with: testSavingAccount)
-                expect(viewModel).toNot(beNil())
+        describe("AccountDataSource") {
+            it("should initialize from an array of accounts") {
+                let dataSource = AccountDataSource(withAccounts: [testSavingAccount, testPaymentAccount, secondTestPaymentAccount])
+                expect(dataSource).toNot(beNil())
             }
             
-            it("should have a primary text field equal to the account alias if set") {
-                testSavingAccount.alias = "Test Alias Value"
-                let viewModel = SavingAccountCellViewModel(with: testSavingAccount)
-                expect(viewModel.primaryAccountLabelText).to(equal("Test Alias Value"))
+            it("should have the correct number of account groups when one of each type") {
+                let dataSource = AccountDataSource(withAccounts: [testSavingAccount, testPaymentAccount])
+                expect(dataSource?.numberOfAccountGroups()).to(equal(2))
             }
             
-            it("should have a primary text field equal to the account name if alias not set") {
-                testSavingAccount.alias = ""
-                testSavingAccount.accountName = "Test Account Name"
-                let viewModel = SavingAccountCellViewModel(with: testSavingAccount)
-                expect(viewModel.primaryAccountLabelText).to(equal("Test Account Name"))
+            it("should have the correct number of account groups when multiple of an account type") {
+                let dataSource = AccountDataSource(withAccounts: [testSavingAccount, testPaymentAccount, secondTestPaymentAccount])
+                expect(dataSource?.numberOfAccountGroups()).to(equal(2))
             }
             
-            it("should store the progress towards saving target as a number between 0 and 1") {
-                testSavingAccount.balanceInCents = 1000
-                testSavingAccount.targetAmountInCents = 2000
-                let expectedPercentage :Float = 0.5
-                let viewModel = SavingAccountCellViewModel(with: testSavingAccount)
-                expect(viewModel.percentTowardsTarget).to(equal(expectedPercentage))
+            it("should correctly report the number of items in a group (savings account)") {
+                let dataSource = AccountDataSource(withAccounts: [testSavingAccount, testPaymentAccount, secondTestPaymentAccount])
+                expect(dataSource?.numberOfAccountsInGroup(atIndex: 0)).to(equal(1)) // 1 savings account
             }
             
-            it("should store the progress towards saving target as 1.0 if the target is surpassed") {
-                testSavingAccount.balanceInCents = 2100
-                testSavingAccount.targetAmountInCents = 2000
-                let expectedPercentage :Float = 1.0
-                let viewModel = SavingAccountCellViewModel(with: testSavingAccount)
-                expect(viewModel.percentTowardsTarget).to(equal(expectedPercentage))
+            it("should correctly report the number of items in a group (payment accounts)") {
+                let dataSource = AccountDataSource(withAccounts: [testSavingAccount, testPaymentAccount, secondTestPaymentAccount])
+                expect(dataSource?.numberOfAccountsInGroup(atIndex: 1)).to(equal(2)) // 2 payment account
             }
             
-            // Limiting to a few unit tests for the purposes of this example
+            it("should correctly report the type of account in a group (savings)") {
+                let dataSource = AccountDataSource(withAccounts: [testSavingAccount, testPaymentAccount, secondTestPaymentAccount])
+                expect(dataSource?.typeOfAccount(atIndex: 0)).to(equal(AccountType.saving)) // 2 payment account
+            }
+            
+            it("should correctly report the type of account in a group (payment)") {
+                let dataSource = AccountDataSource(withAccounts: [testSavingAccount, testPaymentAccount, secondTestPaymentAccount])
+                expect(dataSource?.typeOfAccount(atIndex: 1)).to(equal(AccountType.payment)) // 2 payment account
+            }
+            
+            it("should correctly provide a view model (saving account)") {
+                let dataSource = AccountDataSource(withAccounts: [testSavingAccount, testPaymentAccount, secondTestPaymentAccount])
+                expect(dataSource?.viewModel(forGroup: 0, atIndex: 0)).to(beAKindOf(SavingAccountCellViewModel.self)) // saving account
+            }
+            
+            it("should correctly provide a view model (payment account #0)") {
+                let dataSource = AccountDataSource(withAccounts: [testSavingAccount, testPaymentAccount, secondTestPaymentAccount])
+                expect(dataSource?.viewModel(forGroup: 1, atIndex: 0)).to(beAKindOf(PaymentAccountCellViewModel.self)) // payment account
+            }
+            
+            it("should correctly provide a view model (payment account #1)") {
+                let dataSource = AccountDataSource(withAccounts: [testSavingAccount, testPaymentAccount, secondTestPaymentAccount])
+                expect(dataSource?.viewModel(forGroup: 1, atIndex: 1)).to(beAKindOf(PaymentAccountCellViewModel.self)) // payment account
+            }
+            
+
         }
     }
 }

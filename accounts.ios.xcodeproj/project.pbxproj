@@ -22,6 +22,8 @@
 		07585F1720148C4800296984 /* AccountDataSourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07585F1620148C4800296984 /* AccountDataSourceSpec.swift */; };
 		07585F1920148C9200296984 /* AccountDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07585F1820148C9200296984 /* AccountDataSource.swift */; };
 		07585F1A20148C9200296984 /* AccountDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07585F1820148C9200296984 /* AccountDataSource.swift */; };
+		07585F1C20148DEB00296984 /* AccountCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07585F1B20148DEB00296984 /* AccountCellViewModel.swift */; };
+		07585F1D20148DEB00296984 /* AccountCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07585F1B20148DEB00296984 /* AccountCellViewModel.swift */; };
 		075FB1F7201421C500A4EBAD /* AccountKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 075FB1E7201421C500A4EBAD /* AccountKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		075FB1FA201421C500A4EBAD /* AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075FB1E5201421C500A4EBAD /* AccountKit.framework */; };
 		075FB1FB201421C500A4EBAD /* AccountKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 075FB1E5201421C500A4EBAD /* AccountKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -209,6 +211,7 @@
 		07585F1420148A5500296984 /* RoundedCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
 		07585F1620148C4800296984 /* AccountDataSourceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDataSourceSpec.swift; sourceTree = "<group>"; };
 		07585F1820148C9200296984 /* AccountDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDataSource.swift; sourceTree = "<group>"; };
+		07585F1B20148DEB00296984 /* AccountCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCellViewModel.swift; sourceTree = "<group>"; };
 		075FB1E5201421C500A4EBAD /* AccountKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AccountKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		075FB1E7201421C500A4EBAD /* AccountKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountKit.h; sourceTree = "<group>"; };
 		075FB1E8201421C500A4EBAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -359,6 +362,7 @@
 			children = (
 				07585EF720146B6A00296984 /* PaymentAccountCellViewModel.swift */,
 				07585F0420147AC000296984 /* SavingAccountCellViewModel.swift */,
+				07585F1B20148DEB00296984 /* AccountCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -1176,6 +1180,7 @@
 				078AC8AF201433DD00DC7E1A /* AccountProviderProtocol.swift in Sources */,
 				07585F0520147AC000296984 /* SavingAccountCellViewModel.swift in Sources */,
 				07585EF820146B6A00296984 /* PaymentAccountCellViewModel.swift in Sources */,
+				07585F1C20148DEB00296984 /* AccountCellViewModel.swift in Sources */,
 				078AC8B8201439D700DC7E1A /* PaymentAccount.swift in Sources */,
 				078AC8D420143E5F00DC7E1A /* SavingAccount.swift in Sources */,
 				078AC8B52014397700DC7E1A /* AccountTypes.swift in Sources */,
@@ -1243,6 +1248,7 @@
 				078AC8CF20143D6600DC7E1A /* PaymentAccount.swift in Sources */,
 				07585F0620147AC000296984 /* SavingAccountCellViewModel.swift in Sources */,
 				07585EF920146B6A00296984 /* PaymentAccountCellViewModel.swift in Sources */,
+				07585F1D20148DEB00296984 /* AccountCellViewModel.swift in Sources */,
 				078AC8D220143D6600DC7E1A /* AccountProtocols.swift in Sources */,
 				078AC8D520143E5F00DC7E1A /* SavingAccount.swift in Sources */,
 				078AC8D120143D6600DC7E1A /* AccountProviderProtocol.swift in Sources */,
