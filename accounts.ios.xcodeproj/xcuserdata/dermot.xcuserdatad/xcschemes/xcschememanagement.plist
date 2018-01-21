@@ -14,6 +14,11 @@
 			<key>orderHint</key>
 			<integer>10</integer>
 		</dict>
+		<key>AccountKit_watchos.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
 		<key>accounts.ios WatchKit App (Notification).xcscheme</key>
 		<dict>
 			<key>orderHint</key>
