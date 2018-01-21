@@ -1,0 +1,16 @@
+{
+    "accountBalanceInCents" : 15000,
+    "accountCurrency" : "EUR",
+    "accountId" : "700000027559",
+    "accountName" : "",
+    "accountNumber" : "H 177-27066",
+    "accountType" : "SAVING",
+    "alias" : "G\\UfffdLSAVINGSdiacrits",
+    "iban" : "",
+    "isVisible" : true,
+    "linkedAccountId" : "748757694",
+    "productName" : "Oranje Spaarrekening",
+    "productType" : 1000,
+    "savingsTargetReached" : 1,
+    "targetAmountInCents" : 2000
+}

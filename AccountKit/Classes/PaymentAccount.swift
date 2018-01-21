@@ -7,25 +7,49 @@
 //
 
 import Foundation
+import SwiftyJSON
 
-public class PaymentAccount : AccountProtocol {
-    var type: AccountType?
+public class PaymentAccount : PaymentAccountProtocol {
+    var balanceInCents: Int64
     
-    var balanceInCents: Int64?
+    var currency: Currency
     
-    var currency: Currency?
+    var isVisible: Bool
     
-    var isVisible: Bool?
+    var accountId: String
     
-    var accountId: String?
+    var accountNumber: String
     
-    var accountNumber: String?
+    var alias: String
     
-    var alias: String?
+    var type: AccountType
     
+    public required init?(withJSON json:JSON) {
 
-    public required init() {
+        guard
+            let _accountTypeString = json["accountType"].string,
+            let _balanceInCents = json["accountBalanceInCents"].int64,
+            let _currency = json["accountCurrency"].string,
+            let _isVisible = json["isVisible"].bool,
+            let _accountId = json["accountId"].string,
+            let _accountNumber = json["accountNumber"].string,
+            let _alias = json["alias"].string else {
+                return nil
+        }
         
+        guard let accountType = AccountType(rawValue: _accountTypeString) else {
+            return nil
+        }
+        type = accountType
+        balanceInCents = _balanceInCents
+        if let currencyType = Currency(rawValue: _currency) {
+            currency = currencyType
+        }
+        else { return nil }
+        isVisible = _isVisible
+        accountId = _accountId
+        accountNumber = _accountNumber
+        alias = _alias
     }
-    
 }
+

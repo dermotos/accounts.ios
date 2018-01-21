@@ -74,7 +74,7 @@ public enum AccountType: RawRepresentable, CustomStringConvertible {
 }
 
 
-enum AccountProviderError : Error {
+public enum AccountProviderError : Error {
     case loadingError(String?)
     case parsingError(String?)
 }
