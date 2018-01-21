@@ -11,7 +11,9 @@ import NotificationCenter
 import AccountKit
 
 class TodayViewController: UIViewController, NCWidgetProviding {
-        
+    
+    var dataSource : AccountDataSource!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
@@ -29,7 +31,31 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // If there's no update required, use NCUpdateResult.NoData
         // If there's an update, use NCUpdateResult.NewData
         
+        let dataFilePath = Bundle.main.path(forResource: "accounts", ofType: "json")
+        do {
+            let jsonString = try String(contentsOfFile: dataFilePath!)
+            let accountProvider = AccountProvider(with: jsonString)
+            accountProvider?.getAccounts { [weak self] (success, error, accounts) in
+                if success && error == nil && accounts != nil {
+                    dataSource = AccountDataSource(withAccounts: accounts!)
+                    
+                }
+                else {
+                    if let `self` = self {
+                        self.presentError(withMessage: "Unable to load account information.")
+                    }
+                }
+            }
+        }
+        catch {
+            presentError(withMessage: "Unable to load account information.")
+        }
+        
         completionHandler(NCUpdateResult.newData)
+    }
+    
+    func presentError(withMessage message:String) {
+        print("Display error message in today screen")
     }
     
 }

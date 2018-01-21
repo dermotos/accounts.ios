@@ -1,0 +1,6 @@
+framework module Pods_accounts_ios_todayextension {
+  umbrella header "Pods-accounts.ios.todayextension-umbrella.h"
+
+  export *
+  module * { export * }
+}

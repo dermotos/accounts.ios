@@ -19,6 +19,15 @@ target 'accounts.ios' do
     base_pods
 end
 
+target 'accounts.ios.todayextension' do
+    platform :ios, '11.0'
+
+    source 'https://github.com/CocoaPods/Specs.git'
+    use_frameworks!
+    
+    base_pods
+end
+
 target 'accounts.ios WatchKit Extension' do
     platform :watchos, '4.0'
 
