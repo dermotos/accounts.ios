@@ -11,15 +11,13 @@ import Foundation
 public enum Currency : RawRepresentable, CustomStringConvertible {
     
     case euro
-    case usDollar
-    // Limting to two currencies for the sake of brevity
+    // Limting to single currency for the sake of the example
     
     public typealias RawValue = String
     
     public init?(rawValue: RawValue) {
         switch rawValue {
         case "EUR": self = .euro
-        case "USD": self = .usDollar
         default: return nil
         }
     }
@@ -27,14 +25,12 @@ public enum Currency : RawRepresentable, CustomStringConvertible {
     public var rawValue: RawValue {
         switch self {
         case .euro: return "EUR"
-        case .usDollar: return "USD"
         }
     }
     
     public var description: String {
         switch self {
         case .euro: return "Euro"
-        case .usDollar: return "US Dollar"
         }
     }
 }
