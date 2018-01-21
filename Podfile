@@ -1,5 +1,9 @@
 
 
+def base_pods 
+    pod 'SwiftyJSON'
+end
+
 def testing_pods 
     pod 'Nimble', '~> 7.0.3'
     pod 'Quick', '~> 1.2.0'
@@ -23,4 +27,5 @@ target 'AccountKitTests' do
     use_frameworks!
 
     testing_pods
+    base_pods
 end
