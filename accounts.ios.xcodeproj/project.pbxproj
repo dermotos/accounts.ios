@@ -12,6 +12,10 @@
 		07585EFC20146BD600296984 /* CurrencyFormatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07585EFB20146BD600296984 /* CurrencyFormatExtensions.swift */; };
 		07585EFD20146BD600296984 /* CurrencyFormatExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07585EFB20146BD600296984 /* CurrencyFormatExtensions.swift */; };
 		07585EFF20146D1600296984 /* CurrencyFormatterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07585EFE20146D1600296984 /* CurrencyFormatterSpec.swift */; };
+		07585F012014743300296984 /* PaymentAccountCellViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07585F002014743300296984 /* PaymentAccountCellViewModelSpec.swift */; };
+		07585F0320147A3000296984 /* SavingAccountCellViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07585F0220147A3000296984 /* SavingAccountCellViewModelSpec.swift */; };
+		07585F0520147AC000296984 /* SavingAccountCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07585F0420147AC000296984 /* SavingAccountCellViewModel.swift */; };
+		07585F0620147AC000296984 /* SavingAccountCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07585F0420147AC000296984 /* SavingAccountCellViewModel.swift */; };
 		075FB1F7201421C500A4EBAD /* AccountKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 075FB1E7201421C500A4EBAD /* AccountKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		075FB1FA201421C500A4EBAD /* AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 075FB1E5201421C500A4EBAD /* AccountKit.framework */; };
 		075FB1FB201421C500A4EBAD /* AccountKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 075FB1E5201421C500A4EBAD /* AccountKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -58,10 +62,10 @@
 		07F105FF2014442A0074D159 /* accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = 07F105FE2014442A0074D159 /* accounts.json */; };
 		07F10601201444390074D159 /* testdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 07F10600201444380074D159 /* testdata.json */; };
 		07F10602201445B10074D159 /* accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = 07F105FE2014442A0074D159 /* accounts.json */; };
-		07F1060720145FB10074D159 /* testsavings.json in Resources */ = {isa = PBXBuildFile; fileRef = 07F1060520145FB10074D159 /* testsavings.json */; };
+		07F1060720145FB10074D159 /* testsaving.json in Resources */ = {isa = PBXBuildFile; fileRef = 07F1060520145FB10074D159 /* testsaving.json */; };
 		07F1060820145FB10074D159 /* testpayment.json in Resources */ = {isa = PBXBuildFile; fileRef = 07F1060620145FB10074D159 /* testpayment.json */; };
 		07F1060920145FB80074D159 /* testpayment.json in Resources */ = {isa = PBXBuildFile; fileRef = 07F1060620145FB10074D159 /* testpayment.json */; };
-		07F1060A20145FB80074D159 /* testsavings.json in Resources */ = {isa = PBXBuildFile; fileRef = 07F1060520145FB10074D159 /* testsavings.json */; };
+		07F1060A20145FB80074D159 /* testsaving.json in Resources */ = {isa = PBXBuildFile; fileRef = 07F1060520145FB10074D159 /* testsaving.json */; };
 		0B5121928176C3883ECD2DDA /* Pods_AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000C15F5429C92D46AD38CA8 /* Pods_AccountKit.framework */; };
 		3BFEA44004AF3BAE31E2993C /* Pods_accounts_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41B360A065468A2BA9D3D65 /* Pods_accounts_iosTests.framework */; };
 		C0114F75A32BB480723605A7 /* Pods_AccountKit_WatchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C91BE2E65F8EE3C63A5A99CA /* Pods_AccountKit_WatchOS.framework */; };
@@ -190,6 +194,9 @@
 		07585EF720146B6A00296984 /* PaymentAccountCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAccountCellViewModel.swift; sourceTree = "<group>"; };
 		07585EFB20146BD600296984 /* CurrencyFormatExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatExtensions.swift; sourceTree = "<group>"; };
 		07585EFE20146D1600296984 /* CurrencyFormatterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatterSpec.swift; sourceTree = "<group>"; };
+		07585F002014743300296984 /* PaymentAccountCellViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAccountCellViewModelSpec.swift; sourceTree = "<group>"; };
+		07585F0220147A3000296984 /* SavingAccountCellViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingAccountCellViewModelSpec.swift; sourceTree = "<group>"; };
+		07585F0420147AC000296984 /* SavingAccountCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingAccountCellViewModel.swift; sourceTree = "<group>"; };
 		075FB1E5201421C500A4EBAD /* AccountKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AccountKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		075FB1E7201421C500A4EBAD /* AccountKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountKit.h; sourceTree = "<group>"; };
 		075FB1E8201421C500A4EBAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -239,7 +246,7 @@
 		079CF07F2014197200B61E69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07F105FE2014442A0074D159 /* accounts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = accounts.json; sourceTree = "<group>"; };
 		07F10600201444380074D159 /* testdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testdata.json; sourceTree = "<group>"; };
-		07F1060520145FB10074D159 /* testsavings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testsavings.json; sourceTree = "<group>"; };
+		07F1060520145FB10074D159 /* testsaving.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testsaving.json; sourceTree = "<group>"; };
 		07F1060620145FB10074D159 /* testpayment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testpayment.json; sourceTree = "<group>"; };
 		150851527CE5C9E3BCAB5353 /* Pods-AccountKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AccountKitTests/Pods-AccountKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2AD3D13706C9EC8061574607 /* Pods-AccountKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AccountKit/Pods-AccountKit.debug.xcconfig"; sourceTree = "<group>"; };
@@ -336,6 +343,7 @@
 			isa = PBXGroup;
 			children = (
 				07585EF720146B6A00296984 /* PaymentAccountCellViewModel.swift */,
+				07585F0420147AC000296984 /* SavingAccountCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -368,10 +376,12 @@
 			children = (
 				07F10600201444380074D159 /* testdata.json */,
 				07F1060620145FB10074D159 /* testpayment.json */,
-				07F1060520145FB10074D159 /* testsavings.json */,
+				07F1060520145FB10074D159 /* testsaving.json */,
 				075FB1F4201421C500A4EBAD /* AccountKitDataSourceSpec.swift */,
 				078AC8AB201432A200DC7E1A /* AccountProviderSpec.swift */,
 				07585EFE20146D1600296984 /* CurrencyFormatterSpec.swift */,
+				07585F002014743300296984 /* PaymentAccountCellViewModelSpec.swift */,
+				07585F0220147A3000296984 /* SavingAccountCellViewModelSpec.swift */,
 				075FB1F6201421C500A4EBAD /* Info.plist */,
 			);
 			path = AccountKitTests;
@@ -823,7 +833,7 @@
 			files = (
 				07F1060920145FB80074D159 /* testpayment.json in Resources */,
 				07F105FF2014442A0074D159 /* accounts.json in Resources */,
-				07F1060A20145FB80074D159 /* testsavings.json in Resources */,
+				07F1060A20145FB80074D159 /* testsaving.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -875,7 +885,7 @@
 				07F10601201444390074D159 /* testdata.json in Resources */,
 				07F10602201445B10074D159 /* accounts.json in Resources */,
 				07F1060820145FB10074D159 /* testpayment.json in Resources */,
-				07F1060720145FB10074D159 /* testsavings.json in Resources */,
+				07F1060720145FB10074D159 /* testsaving.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1079,6 +1089,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				078AC8AF201433DD00DC7E1A /* AccountProviderProtocol.swift in Sources */,
+				07585F0520147AC000296984 /* SavingAccountCellViewModel.swift in Sources */,
 				07585EF820146B6A00296984 /* PaymentAccountCellViewModel.swift in Sources */,
 				078AC8B8201439D700DC7E1A /* PaymentAccount.swift in Sources */,
 				078AC8D420143E5F00DC7E1A /* SavingAccount.swift in Sources */,
@@ -1130,7 +1141,9 @@
 			files = (
 				07585EFF20146D1600296984 /* CurrencyFormatterSpec.swift in Sources */,
 				078AC8AD201433B500DC7E1A /* AccountKitDataSourceSpec.swift in Sources */,
+				07585F012014743300296984 /* PaymentAccountCellViewModelSpec.swift in Sources */,
 				078AC8AC201432A200DC7E1A /* AccountProviderSpec.swift in Sources */,
+				07585F0320147A3000296984 /* SavingAccountCellViewModelSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1139,6 +1152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				078AC8CF20143D6600DC7E1A /* PaymentAccount.swift in Sources */,
+				07585F0620147AC000296984 /* SavingAccountCellViewModel.swift in Sources */,
 				07585EF920146B6A00296984 /* PaymentAccountCellViewModel.swift in Sources */,
 				078AC8D220143D6600DC7E1A /* AccountProtocols.swift in Sources */,
 				078AC8D520143E5F00DC7E1A /* SavingAccount.swift in Sources */,

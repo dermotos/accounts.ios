@@ -20,9 +20,13 @@ public class SavingAccount : SavingAccountProtocol {
     
     var accountNumber: String
     
+    var accountName: String
+    
     var alias: String
     
     var type: AccountType
+    
+    var iban: String
     
     var productName: String
     
@@ -44,11 +48,13 @@ public class SavingAccount : SavingAccountProtocol {
             let _isVisible = json["isVisible"].bool,
             let _accountId = json["accountId"].string,
             let _accountNumber = json["accountNumber"].string,
+            let _accountName = json["accountName"].string,
             let _alias = json["alias"].string,
             let _productName = json["productName"].string,
             let _productType = json["productType"].int,
             let _savingsTargetReached = json["savingsTargetReached"].int,
             let _targetAmountInCents = json["targetAmountInCents"].int64,
+            let _iban = json["iban"].string,
             let _linkedAccountId = json["linkedAccountId"].string else {
                 return nil
         }
@@ -58,10 +64,13 @@ public class SavingAccount : SavingAccountProtocol {
             currency = currencyType
         }
         else { return nil }
+        
         isVisible = _isVisible
         accountId = _accountId
         accountNumber = _accountNumber
+        accountName = _accountName
         alias = _alias
+        iban = _iban
         productName = _productName
         productType = _productType
         savingsTargetReached = _savingsTargetReached == 1 ? true : false

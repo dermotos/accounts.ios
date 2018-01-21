@@ -16,7 +16,9 @@ protocol AccountProtocol {
     var isVisible : Bool { get set }
     var accountId : String { get set }
     var accountNumber : String { get set }
+    var accountName : String { get set }
     var alias : String { get set }
+    var iban : String { get set }
     
     init?(withJSON json:JSON)
 }

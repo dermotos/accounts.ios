@@ -20,9 +20,13 @@ public class PaymentAccount : PaymentAccountProtocol {
     
     var accountNumber: String
     
+    var accountName: String
+    
     var alias: String
     
     var type: AccountType
+    
+    var iban : String
     
     public required init?(withJSON json:JSON) {
 
@@ -33,6 +37,8 @@ public class PaymentAccount : PaymentAccountProtocol {
             let _isVisible = json["isVisible"].bool,
             let _accountId = json["accountId"].string,
             let _accountNumber = json["accountNumber"].string,
+            let _accountName = json["accountName"].string,
+            let _iban = json["iban"].string,
             let _alias = json["alias"].string else {
                 return nil
         }
@@ -48,7 +54,9 @@ public class PaymentAccount : PaymentAccountProtocol {
         else { return nil }
         isVisible = _isVisible
         accountId = _accountId
+        accountName = _accountName
         accountNumber = _accountNumber
+        iban = _iban
         alias = _alias
     }
 }
