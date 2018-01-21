@@ -8,6 +8,11 @@
 
 import Foundation
 
-protocol AccountProvider {
+
+typealias JSONString = String
+
+protocol AccountProviderProtocol {
+    
+    init?(with json:JSONString)
     func getAccounts(withCompletion completion:AccountProviderResult)
 }

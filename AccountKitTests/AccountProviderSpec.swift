@@ -15,8 +15,8 @@ import SwiftyJSON
 class AccountKitProviderSpec: QuickSpec {
     
     override func spec() {
-        describe("The JSONAccountProvider class") {
-            it("should conform to the AccountProvider protocol") {
+        describe("The AccountProvider class") {
+            it("should conform to the AccountProviderProtocol") {
                 
             }
             

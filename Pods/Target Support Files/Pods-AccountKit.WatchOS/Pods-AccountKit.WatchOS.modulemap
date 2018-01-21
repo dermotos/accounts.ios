@@ -1,0 +1,6 @@
+framework module Pods_AccountKit_WatchOS {
+  umbrella header "Pods-AccountKit.WatchOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

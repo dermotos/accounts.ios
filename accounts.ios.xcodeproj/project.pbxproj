@@ -31,7 +31,7 @@
 		078AC8AA20142B4000DC7E1A /* accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = 075FB2062014244A00A4EBAD /* accounts.json */; };
 		078AC8AC201432A200DC7E1A /* AccountProviderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078AC8AB201432A200DC7E1A /* AccountProviderSpec.swift */; };
 		078AC8AD201433B500DC7E1A /* AccountKitDataSourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075FB1F4201421C500A4EBAD /* AccountKitDataSourceSpec.swift */; };
-		078AC8AF201433DD00DC7E1A /* AccountProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078AC8AE201433DD00DC7E1A /* AccountProvider.swift */; };
+		078AC8AF201433DD00DC7E1A /* AccountProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078AC8AE201433DD00DC7E1A /* AccountProviderProtocol.swift */; };
 		078AC8B1201434BF00DC7E1A /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078AC8B0201434BF00DC7E1A /* Account.swift */; };
 		078AC8B52014397700DC7E1A /* AccountTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078AC8B42014397700DC7E1A /* AccountTypes.swift */; };
 		078AC8B8201439D700DC7E1A /* PaymentAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078AC8B7201439D700DC7E1A /* PaymentAccount.swift */; };
@@ -40,15 +40,21 @@
 		078AC8CA20143D5700DC7E1A /* AccountKit_WatchOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 078AC8C220143D5700DC7E1A /* AccountKit_WatchOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		078AC8CF20143D6600DC7E1A /* PaymentAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078AC8B7201439D700DC7E1A /* PaymentAccount.swift */; };
 		078AC8D020143D6600DC7E1A /* AccountTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078AC8B42014397700DC7E1A /* AccountTypes.swift */; };
-		078AC8D120143D6600DC7E1A /* AccountProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078AC8AE201433DD00DC7E1A /* AccountProvider.swift */; };
+		078AC8D120143D6600DC7E1A /* AccountProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078AC8AE201433DD00DC7E1A /* AccountProviderProtocol.swift */; };
 		078AC8D220143D6600DC7E1A /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078AC8B0201434BF00DC7E1A /* Account.swift */; };
 		078AC8D420143E5F00DC7E1A /* SavingAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078AC8D320143E5F00DC7E1A /* SavingAccount.swift */; };
 		078AC8D520143E5F00DC7E1A /* SavingAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078AC8D320143E5F00DC7E1A /* SavingAccount.swift */; };
+		078AC8D72014405B00DC7E1A /* AccountProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078AC8D62014405B00DC7E1A /* AccountProvider.swift */; };
+		078AC8D82014405B00DC7E1A /* AccountProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078AC8D62014405B00DC7E1A /* AccountProvider.swift */; };
+		078AC8D92014409500DC7E1A /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078AC8DA2014409500DC7E1A /* SwiftyJSON.framework */; };
+		078AC8DB201440A100DC7E1A /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 078AC8DC201440A100DC7E1A /* SwiftyJSON.framework */; };
 		079CF0782014197200B61E69 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079CF0772014197200B61E69 /* NotificationCenter.framework */; };
 		079CF07B2014197200B61E69 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079CF07A2014197200B61E69 /* TodayViewController.swift */; };
 		079CF07E2014197200B61E69 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079CF07C2014197200B61E69 /* MainInterface.storyboard */; };
 		079CF0822014197200B61E69 /* accounts.ios.todayextension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 079CF0752014197200B61E69 /* accounts.ios.todayextension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0B5121928176C3883ECD2DDA /* Pods_AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000C15F5429C92D46AD38CA8 /* Pods_AccountKit.framework */; };
 		3BFEA44004AF3BAE31E2993C /* Pods_accounts_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41B360A065468A2BA9D3D65 /* Pods_accounts_iosTests.framework */; };
+		C0114F75A32BB480723605A7 /* Pods_AccountKit_WatchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C91BE2E65F8EE3C63A5A99CA /* Pods_AccountKit_WatchOS.framework */; };
 		CE38793E1BD69E15F18FAE7E /* Pods_AccountKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733296EA7C22685978EDA981 /* Pods_AccountKitTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -170,6 +176,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		000C15F5429C92D46AD38CA8 /* Pods_AccountKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AccountKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		075FB1E5201421C500A4EBAD /* AccountKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AccountKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		075FB1E7201421C500A4EBAD /* AccountKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountKit.h; sourceTree = "<group>"; };
 		075FB1E8201421C500A4EBAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -201,10 +208,8 @@
 		076D0ED620141289001B4DD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		076D0ED720141289001B4DD6 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		078AC89F201425ED00DC7E1A /* AccountKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccountKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		078AC8A1201425ED00DC7E1A /* AccountKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountKitTests.swift; sourceTree = "<group>"; };
-		078AC8A3201425ED00DC7E1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		078AC8AB201432A200DC7E1A /* AccountProviderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountProviderSpec.swift; sourceTree = "<group>"; };
-		078AC8AE201433DD00DC7E1A /* AccountProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountProvider.swift; sourceTree = "<group>"; };
+		078AC8AE201433DD00DC7E1A /* AccountProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountProviderProtocol.swift; sourceTree = "<group>"; };
 		078AC8B0201434BF00DC7E1A /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		078AC8B42014397700DC7E1A /* AccountTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTypes.swift; sourceTree = "<group>"; };
 		078AC8B7201439D700DC7E1A /* PaymentAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentAccount.swift; sourceTree = "<group>"; };
@@ -212,16 +217,24 @@
 		078AC8C420143D5700DC7E1A /* AccountKit_watchos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccountKit_watchos.h; sourceTree = "<group>"; };
 		078AC8C520143D5700DC7E1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		078AC8D320143E5F00DC7E1A /* SavingAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingAccount.swift; sourceTree = "<group>"; };
+		078AC8D62014405B00DC7E1A /* AccountProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountProvider.swift; sourceTree = "<group>"; };
+		078AC8DA2014409500DC7E1A /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		078AC8DC201440A100DC7E1A /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		079CF0752014197200B61E69 /* accounts.ios.todayextension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = accounts.ios.todayextension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		079CF0772014197200B61E69 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		079CF07A2014197200B61E69 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		079CF07D2014197200B61E69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		079CF07F2014197200B61E69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		150851527CE5C9E3BCAB5353 /* Pods-AccountKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AccountKitTests/Pods-AccountKitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2AD3D13706C9EC8061574607 /* Pods-AccountKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AccountKit/Pods-AccountKit.debug.xcconfig"; sourceTree = "<group>"; };
 		35EB2E26FD2BE2E05E09FFFF /* Pods-accounts.iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-accounts.iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-accounts.iosTests/Pods-accounts.iosTests.release.xcconfig"; sourceTree = "<group>"; };
+		550F90A270ACFEC011F29FC0 /* Pods-AccountKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-AccountKit/Pods-AccountKit.release.xcconfig"; sourceTree = "<group>"; };
 		70E9E4CFFB0295A447C0C3F5 /* Pods-accounts.iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-accounts.iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-accounts.iosTests/Pods-accounts.iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 		733296EA7C22685978EDA981 /* Pods_AccountKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AccountKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		891A12712AFBF79FB9B0059E /* Pods-AccountKit.WatchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountKit.WatchOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-AccountKit.WatchOS/Pods-AccountKit.WatchOS.release.xcconfig"; sourceTree = "<group>"; };
+		8B45576947CCB27CCB788849 /* Pods-AccountKit.WatchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountKit.WatchOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AccountKit.WatchOS/Pods-AccountKit.WatchOS.debug.xcconfig"; sourceTree = "<group>"; };
 		C14F50BF8FF2D3E8B7FBFAA0 /* Pods-AccountKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountKitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AccountKitTests/Pods-AccountKitTests.release.xcconfig"; sourceTree = "<group>"; };
+		C91BE2E65F8EE3C63A5A99CA /* Pods_AccountKit_WatchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AccountKit_WatchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E41B360A065468A2BA9D3D65 /* Pods_accounts_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_accounts_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -230,6 +243,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				078AC8D92014409500DC7E1A /* SwiftyJSON.framework in Frameworks */,
+				0B5121928176C3883ECD2DDA /* Pods_AccountKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +292,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				078AC8DB201440A100DC7E1A /* SwiftyJSON.framework in Frameworks */,
+				C0114F75A32BB480723605A7 /* Pods_AccountKit_WatchOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +351,6 @@
 				079CF0792014197200B61E69 /* accounts.ios.todayextension */,
 				075FB1E6201421C500A4EBAD /* AccountKit */,
 				075FB1F3201421C500A4EBAD /* AccountKitTests */,
-				078AC8A0201425ED00DC7E1A /* AccountKitTests */,
 				078AC8C320143D5700DC7E1A /* AccountKit_watchos */,
 				079CF0762014197200B61E69 /* Frameworks */,
 				076D0E9320141289001B4DD6 /* Products */,
@@ -412,19 +428,10 @@
 			path = "accounts.ios WatchKit Extension";
 			sourceTree = "<group>";
 		};
-		078AC8A0201425ED00DC7E1A /* AccountKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				078AC8A1201425ED00DC7E1A /* AccountKitTests.swift */,
-				078AC8A3201425ED00DC7E1A /* Info.plist */,
-			);
-			path = AccountKitTests;
-			sourceTree = "<group>";
-		};
 		078AC8B22014395C00DC7E1A /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				078AC8AE201433DD00DC7E1A /* AccountProvider.swift */,
+				078AC8AE201433DD00DC7E1A /* AccountProviderProtocol.swift */,
 				078AC8B0201434BF00DC7E1A /* Account.swift */,
 			);
 			path = Protocols;
@@ -443,6 +450,7 @@
 			children = (
 				078AC8B7201439D700DC7E1A /* PaymentAccount.swift */,
 				078AC8D320143E5F00DC7E1A /* SavingAccount.swift */,
+				078AC8D62014405B00DC7E1A /* AccountProvider.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -459,9 +467,13 @@
 		079CF0762014197200B61E69 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				078AC8DC201440A100DC7E1A /* SwiftyJSON.framework */,
+				078AC8DA2014409500DC7E1A /* SwiftyJSON.framework */,
 				079CF0772014197200B61E69 /* NotificationCenter.framework */,
 				E41B360A065468A2BA9D3D65 /* Pods_accounts_iosTests.framework */,
 				733296EA7C22685978EDA981 /* Pods_AccountKitTests.framework */,
+				000C15F5429C92D46AD38CA8 /* Pods_AccountKit.framework */,
+				C91BE2E65F8EE3C63A5A99CA /* Pods_AccountKit_WatchOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -490,6 +502,10 @@
 				35EB2E26FD2BE2E05E09FFFF /* Pods-accounts.iosTests.release.xcconfig */,
 				150851527CE5C9E3BCAB5353 /* Pods-AccountKitTests.debug.xcconfig */,
 				C14F50BF8FF2D3E8B7FBFAA0 /* Pods-AccountKitTests.release.xcconfig */,
+				2AD3D13706C9EC8061574607 /* Pods-AccountKit.debug.xcconfig */,
+				550F90A270ACFEC011F29FC0 /* Pods-AccountKit.release.xcconfig */,
+				8B45576947CCB27CCB788849 /* Pods-AccountKit.WatchOS.debug.xcconfig */,
+				891A12712AFBF79FB9B0059E /* Pods-AccountKit.WatchOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -520,10 +536,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 075FB200201421C500A4EBAD /* Build configuration list for PBXNativeTarget "AccountKit" */;
 			buildPhases = (
+				A3C73B2D97C5E3AEC7BC1DED /* [CP] Check Pods Manifest.lock */,
 				075FB1E0201421C500A4EBAD /* Sources */,
 				075FB1E1201421C500A4EBAD /* Frameworks */,
 				075FB1E2201421C500A4EBAD /* Headers */,
 				075FB1E3201421C500A4EBAD /* Resources */,
+				A0FF06322696489BEDF2277A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -658,10 +676,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 078AC8CB20143D5700DC7E1A /* Build configuration list for PBXNativeTarget "AccountKit.WatchOS" */;
 			buildPhases = (
+				37072C2511D4763916CA690C /* [CP] Check Pods Manifest.lock */,
 				078AC8BD20143D5700DC7E1A /* Sources */,
 				078AC8BE20143D5700DC7E1A /* Frameworks */,
 				078AC8BF20143D5700DC7E1A /* Headers */,
 				078AC8C020143D5700DC7E1A /* Resources */,
+				46B05C7EDF84596BFECA64E0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -880,6 +900,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		37072C2511D4763916CA690C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AccountKit.WatchOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		41E6BF020B54B8BF06EF50AF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -893,6 +931,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AccountKitTests/Pods-AccountKitTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46B05C7EDF84596BFECA64E0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AccountKit.WatchOS/Pods-AccountKit.WatchOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8043C26EFBB6984FA6B92D13 /* [CP] Copy Pods Resources */ = {
@@ -919,7 +972,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-AccountKitTests/Pods-AccountKitTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON-iOS/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -930,6 +983,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AccountKitTests/Pods-AccountKitTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A0FF06322696489BEDF2277A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AccountKit/Pods-AccountKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3C73B2D97C5E3AEC7BC1DED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AccountKit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DEB207115EB63C37A9015FB5 /* [CP] Check Pods Manifest.lock */ = {
@@ -957,10 +1043,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				078AC8AF201433DD00DC7E1A /* AccountProvider.swift in Sources */,
+				078AC8AF201433DD00DC7E1A /* AccountProviderProtocol.swift in Sources */,
 				078AC8B8201439D700DC7E1A /* PaymentAccount.swift in Sources */,
 				078AC8D420143E5F00DC7E1A /* SavingAccount.swift in Sources */,
 				078AC8B52014397700DC7E1A /* AccountTypes.swift in Sources */,
+				078AC8D72014405B00DC7E1A /* AccountProvider.swift in Sources */,
 				078AC8B1201434BF00DC7E1A /* Account.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1016,7 +1103,8 @@
 				078AC8CF20143D6600DC7E1A /* PaymentAccount.swift in Sources */,
 				078AC8D220143D6600DC7E1A /* Account.swift in Sources */,
 				078AC8D520143E5F00DC7E1A /* SavingAccount.swift in Sources */,
-				078AC8D120143D6600DC7E1A /* AccountProvider.swift in Sources */,
+				078AC8D120143D6600DC7E1A /* AccountProviderProtocol.swift in Sources */,
+				078AC8D82014405B00DC7E1A /* AccountProvider.swift in Sources */,
 				078AC8D020143D6600DC7E1A /* AccountTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1112,6 +1200,7 @@
 /* Begin XCBuildConfiguration section */
 		075FB1FC201421C500A4EBAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AD3D13706C9EC8061574607 /* Pods-AccountKit.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -1140,6 +1229,7 @@
 		};
 		075FB1FD201421C500A4EBAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 550F90A270ACFEC011F29FC0 /* Pods-AccountKit.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -1482,6 +1572,7 @@
 		};
 		078AC8CC20143D5700DC7E1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B45576947CCB27CCB788849 /* Pods-AccountKit.WatchOS.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -1509,6 +1600,7 @@
 		};
 		078AC8CD20143D5700DC7E1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 891A12712AFBF79FB9B0059E /* Pods-AccountKit.WatchOS.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";

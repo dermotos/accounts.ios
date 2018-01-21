@@ -29,3 +29,19 @@ target 'AccountKitTests' do
     testing_pods
     base_pods
 end
+
+target 'AccountKit' do
+    platform :ios, '11.0'
+
+    source 'https://github.com/CocoaPods/Specs.git'
+    use_frameworks!
+    base_pods
+end
+
+target 'AccountKit.WatchOS' do
+    platform :watchos, '4.0'
+
+    source 'https://github.com/CocoaPods/Specs.git'
+    use_frameworks!
+    base_pods
+end
