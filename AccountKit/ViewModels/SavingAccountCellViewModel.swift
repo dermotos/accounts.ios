@@ -19,7 +19,7 @@ public class SavingAccountCellViewModel : AccountCellViewModel {
     public var productName : String
     public var savingsTargetReached : Bool
     public var savingsTargetFormatted : String
-    
+    public var type : AccountType
     public var percentTowardsTarget : Float
     
     
@@ -56,6 +56,7 @@ public class SavingAccountCellViewModel : AccountCellViewModel {
         linkedAccountNumber = account.linkedAccountId
         accountNumber = account.accountNumber
         iban = account.iban
+        type = account.type
         
         if account.balanceInCents >= account.targetAmountInCents {
             percentTowardsTarget = 1.0

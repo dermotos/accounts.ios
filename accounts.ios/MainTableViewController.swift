@@ -25,6 +25,9 @@ class MainTableViewController : UITableViewController {
 
         tableView.tableFooterView = makeFooterView()
         tableView.tableFooterView?.frame = CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: 100)
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 80.0
+        
         let dataFilePath = Bundle.main.path(forResource: "accounts", ofType: "json")
         do {
             let jsonString = try String(contentsOfFile: dataFilePath!)

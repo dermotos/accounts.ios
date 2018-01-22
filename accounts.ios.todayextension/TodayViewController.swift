@@ -10,13 +10,19 @@ import UIKit
 import NotificationCenter
 import AccountKit
 
-class TodayViewController: UIViewController, NCWidgetProviding {
+class TodayViewController: UIViewController, NCWidgetProviding, UITableViewDataSource, UITableViewDelegate {
+    @IBOutlet weak var tableView: UITableView!
     
     var dataSource : AccountDataSource!
-    
+    let compactModeHeight : CGFloat = 110 // This value is set by iOS and is unchangable
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view from its nib.
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 50
+        tableView.tableFooterView = UIView() // prevents extra dividing bars after last cell
+        extensionContext?.widgetLargestAvailableDisplayMode = .expanded
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -24,38 +30,79 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         // Dispose of any resources that can be recreated.
     }
     
+    //MARK - UITableViewDataSource protocol conformance
+    
+    func widgetActiveDisplayModeDidChange(_ activeDisplayMode: NCWidgetDisplayMode, withMaximumSize maxSize: CGSize) {
+        var preferredHeight : CGFloat = 0
+        switch activeDisplayMode {
+        case .compact:
+            preferredHeight = compactModeHeight
+            
+        case .expanded:
+            let heightPerRow :CGFloat = 50.0
+            if dataSource == nil {
+                preferredHeight = compactModeHeight
+            }
+            else {
+                preferredHeight = heightPerRow * CGFloat(totalNumberOfAccounts())
+            }
+        }
+        preferredContentSize = CGSize(width: view.bounds.size.width, height: preferredHeight)
+    }
+    
+    private func totalNumberOfAccounts() -> Int {
+        var numberOfAccounts = 0
+        for index in 0..<dataSource.numberOfAccountGroups() {
+            let accountsInGroup = dataSource.numberOfAccountsInGroup(atIndex: index)
+            numberOfAccounts += accountsInGroup
+        }
+        return numberOfAccounts
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return dataSource.numberOfAccountGroups()
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataSource.numberOfAccountsInGroup(atIndex: section)
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "todayCell", for: indexPath) as! TodayViewCell
+        let cellModel = dataSource.viewModel(forGroup: indexPath.section, atIndex: indexPath.row)
+        cell.primaryLabel.text = cellModel.primaryAccountLabelText
+        cell.secondaryLabel.text = cellModel.type.description
+        cell.trailingLabel.text = cellModel.formattedBalance
+        return cell
+    }
+    
     func widgetPerformUpdate(completionHandler: (@escaping (NCUpdateResult) -> Void)) {
-        // Perform any setup necessary in order to update the view.
-        
-        // If an error is encountered, use NCUpdateResult.Failed
-        // If there's no update required, use NCUpdateResult.NoData
-        // If there's an update, use NCUpdateResult.NewData
-        
+
         let dataFilePath = Bundle.main.path(forResource: "accounts", ofType: "json")
         do {
             let jsonString = try String(contentsOfFile: dataFilePath!)
             let accountProvider = AccountProvider(with: jsonString)
             accountProvider?.getAccounts { [weak self] (success, error, accounts) in
                 if success && error == nil && accounts != nil {
-                    dataSource = AccountDataSource(withAccounts: accounts!)
-                    
+                    // Ensure self hasn't fallen out of scope during the loading process
+                    guard let `self` = self else {
+                        completionHandler(NCUpdateResult.failed)
+                        return
+                    }
+                    self.dataSource = AccountDataSource(withAccounts: accounts!)
+                    self.dataSource.displayHiddenAccounts = false // To keep the today view simple, only non-hidden accounts are visible
+                    self.tableView.dataSource = self
+                    self.tableView.delegate = self
+                    self.tableView.reloadData()
+                    completionHandler(NCUpdateResult.newData)
                 }
                 else {
-                    if let `self` = self {
-                        self.presentError(withMessage: "Unable to load account information.")
-                    }
+                    completionHandler(NCUpdateResult.failed)
                 }
             }
         }
         catch {
-            presentError(withMessage: "Unable to load account information.")
+            completionHandler(NCUpdateResult.failed)
         }
-        
-        completionHandler(NCUpdateResult.newData)
     }
-    
-    func presentError(withMessage message:String) {
-        print("Display error message in today screen")
-    }
-    
 }

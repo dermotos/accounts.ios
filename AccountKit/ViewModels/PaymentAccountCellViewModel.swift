@@ -15,6 +15,7 @@ public class PaymentAccountCellViewModel : AccountCellViewModel {
     public var isVisible : Bool
     public var accountNumber : String
     public var iban : String
+    public var type : AccountType
     
     required public init(with account:PaymentAccountProtocol) {
     /* we shall assume the following priority for identifying an account from the perspective
@@ -44,6 +45,7 @@ public class PaymentAccountCellViewModel : AccountCellViewModel {
         formattedBalance = account.balanceInCents.asCurrencyString(forLocale: Locale(identifier: "nl_nl"))
         isVisible = account.isVisible
         accountNumber = account.accountNumber
+        type = account.type
         iban = "IBAN: \(account.iban)"
  
     }
