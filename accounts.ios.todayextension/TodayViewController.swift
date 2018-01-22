@@ -44,20 +44,13 @@ class TodayViewController: UIViewController, NCWidgetProviding, UITableViewDataS
                 preferredHeight = compactModeHeight
             }
             else {
-                preferredHeight = heightPerRow * CGFloat(totalNumberOfAccounts())
+                preferredHeight = heightPerRow * CGFloat(dataSource.totalNumberOfAccounts(includingHiddenAccounts: false))
             }
         }
         preferredContentSize = CGSize(width: view.bounds.size.width, height: preferredHeight)
     }
     
-    private func totalNumberOfAccounts() -> Int {
-        var numberOfAccounts = 0
-        for index in 0..<dataSource.numberOfAccountGroups() {
-            let accountsInGroup = dataSource.numberOfAccountsInGroup(atIndex: index)
-            numberOfAccounts += accountsInGroup
-        }
-        return numberOfAccounts
-    }
+    
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return dataSource.numberOfAccountGroups()

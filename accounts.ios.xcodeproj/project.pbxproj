@@ -68,6 +68,7 @@
 		079CF0822014197200B61E69 /* accounts.ios.todayextension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 079CF0752014197200B61E69 /* accounts.ios.todayextension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		07ADAF6D20154A7B0059364C /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ADAF6C20154A7B0059364C /* ViewExtensions.swift */; };
 		07ADAF6F20156DF30059364C /* TodayViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ADAF6E20156DF30059364C /* TodayViewCell.swift */; };
+		07ADAF712015820E0059364C /* WatchAccountRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07ADAF702015820E0059364C /* WatchAccountRow.swift */; };
 		07B727822014A22200DD1622 /* accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = 07F105FE2014442A0074D159 /* accounts.json */; };
 		07B727832014A22700DD1622 /* accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = 07F105FE2014442A0074D159 /* accounts.json */; };
 		07B727842014A22800DD1622 /* accounts.json in Resources */ = {isa = PBXBuildFile; fileRef = 07F105FE2014442A0074D159 /* accounts.json */; };
@@ -266,6 +267,7 @@
 		079CF07F2014197200B61E69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07ADAF6C20154A7B0059364C /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		07ADAF6E20156DF30059364C /* TodayViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewCell.swift; sourceTree = "<group>"; };
+		07ADAF702015820E0059364C /* WatchAccountRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAccountRow.swift; sourceTree = "<group>"; };
 		07F105FE2014442A0074D159 /* accounts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = accounts.json; sourceTree = "<group>"; };
 		07F10600201444380074D159 /* testdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testdata.json; sourceTree = "<group>"; };
 		07F1060520145FB10074D159 /* testsaving.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testsaving.json; sourceTree = "<group>"; };
@@ -507,6 +509,7 @@
 				076D0ED420141289001B4DD6 /* Assets.xcassets */,
 				076D0ED620141289001B4DD6 /* Info.plist */,
 				076D0ED720141289001B4DD6 /* PushNotificationPayload.apns */,
+				07ADAF702015820E0059364C /* WatchAccountRow.swift */,
 			);
 			path = "accounts.ios WatchKit Extension";
 			sourceTree = "<group>";
@@ -1338,6 +1341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07ADAF712015820E0059364C /* WatchAccountRow.swift in Sources */,
 				076D0ED320141289001B4DD6 /* NotificationController.swift in Sources */,
 				076D0ED120141289001B4DD6 /* ExtensionDelegate.swift in Sources */,
 				076D0ECF20141289001B4DD6 /* InterfaceController.swift in Sources */,
