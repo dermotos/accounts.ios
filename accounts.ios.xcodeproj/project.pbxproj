@@ -272,6 +272,11 @@
 		07F10600201444380074D159 /* testdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testdata.json; sourceTree = "<group>"; };
 		07F1060520145FB10074D159 /* testsaving.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testsaving.json; sourceTree = "<group>"; };
 		07F1060620145FB10074D159 /* testpayment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testpayment.json; sourceTree = "<group>"; };
+		07FC6E0820158D4C00AE8D8F /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Main.strings; sourceTree = "<group>"; };
+		07FC6E0920158D4D00AE8D8F /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		07FC6E0A20158D4D00AE8D8F /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Interface.strings; sourceTree = "<group>"; };
+		07FC6E0B20158D4D00AE8D8F /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/MainInterface.strings; sourceTree = "<group>"; };
+		07FC6E2E2015900600AE8D8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		150851527CE5C9E3BCAB5353 /* Pods-AccountKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AccountKitTests/Pods-AccountKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2AD3D13706C9EC8061574607 /* Pods-AccountKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AccountKit/Pods-AccountKit.debug.xcconfig"; sourceTree = "<group>"; };
 		35EB2E26FD2BE2E05E09FFFF /* Pods-accounts.iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-accounts.iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-accounts.iosTests/Pods-accounts.iosTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -876,6 +881,7 @@
 			knownRegions = (
 				en,
 				Base,
+				nl,
 			);
 			mainGroup = 076D0E8920141288001B4DD6;
 			productRefGroup = 076D0E9320141289001B4DD6 /* Products */;
@@ -1438,6 +1444,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				076D0E9A20141289001B4DD6 /* Base */,
+				07FC6E0820158D4C00AE8D8F /* nl */,
+				07FC6E2E2015900600AE8D8F /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1446,6 +1454,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				076D0E9F20141289001B4DD6 /* Base */,
+				07FC6E0920158D4D00AE8D8F /* nl */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -1454,6 +1463,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				076D0EC020141289001B4DD6 /* Base */,
+				07FC6E0A20158D4D00AE8D8F /* nl */,
 			);
 			name = Interface.storyboard;
 			sourceTree = "<group>";
@@ -1462,6 +1472,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				079CF07D2014197200B61E69 /* Base */,
+				07FC6E0B20158D4D00AE8D8F /* nl */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -1530,6 +1541,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1587,6 +1599,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

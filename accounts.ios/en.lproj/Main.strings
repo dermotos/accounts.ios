@@ -1,0 +1,36 @@
+
+/* Class = "UILabel"; text = "[SecondaryAccountName]"; ObjectID = "3Of-wa-IQj"; */
+"3Of-wa-IQj.text" = "[SecondaryAccountName]";
+
+/* Class = "UILabel"; text = "€23,00"; ObjectID = "59J-OZ-pj6"; */
+"59J-OZ-pj6.text" = "€23,00";
+
+/* Class = "UILabel"; text = "iban"; ObjectID = "BHm-Zm-YsM"; */
+"BHm-Zm-YsM.text" = "iban";
+
+/* Class = "UILabel"; text = "[AccountName]"; ObjectID = "Hob-MZ-lOd"; */
+"Hob-MZ-lOd.text" = "[AccountName]";
+
+/* Class = "UILabel"; text = "iban"; ObjectID = "JE0-IU-gdz"; */
+"JE0-IU-gdz.text" = "iban";
+
+/* Class = "UINavigationItem"; title = "Accounts"; ObjectID = "U0v-Dg-M7G"; */
+"U0v-Dg-M7G.title" = "Accounts";
+
+/* Class = "UILabel"; text = "[AccountName]"; ObjectID = "Y2u-hd-Juv"; */
+"Y2u-hd-Juv.text" = "[AccountName]";
+
+/* Class = "UILabel"; text = "€23,00"; ObjectID = "cp4-fp-OTI"; */
+"cp4-fp-OTI.text" = "€23,00";
+
+/* Class = "UILabel"; text = "accountNumber"; ObjectID = "k3f-Qc-Y12"; */
+"k3f-Qc-Y12.text" = "accountNumber";
+
+/* Class = "UILabel"; text = "accountNumber"; ObjectID = "uHn-RI-jbo"; */
+"uHn-RI-jbo.text" = "accountNumber";
+
+/* Class = "UITableViewController"; title = "Accounts"; ObjectID = "zgA-FZ-b2h"; */
+"zgA-FZ-b2h.title" = "Accounts";
+
+/* Class = "UILabel"; text = "[SecondaryAccountName]"; ObjectID = "ztl-5x-Qku"; */
+"ztl-5x-Qku.text" = "[SecondaryAccountName]";
