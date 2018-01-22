@@ -15,13 +15,13 @@ public protocol AccountDataSourceProtocol : class {
     func numberOfAccountGroups() -> Int
     func numberOfAccountsInGroup(atIndex groupIndex:Int) -> Int
     func typeOfAccount(atIndex groupIndex:Int) -> AccountType
+    func totalNumberOfAccounts(includingHiddenAccounts includeHidden:Bool) -> Int
     
     func viewModel(forGroup groupIndex: Int, atIndex itemIndex: Int) -> AccountCellViewModel
     
 }
 
 public class AccountDataSource : AccountDataSourceProtocol {
-    
     private lazy var visibleViewModels = [[AccountCellViewModel]]()
     private lazy var visibleAccountTypes = [AccountType]()
     
@@ -62,6 +62,15 @@ public class AccountDataSource : AccountDataSourceProtocol {
                     visibleAccountTypes.append(account.type)
                 }
             }
+        }
+    }
+    
+    public func totalNumberOfAccounts(includingHiddenAccounts includeHidden:Bool) -> Int {
+        if includeHidden {
+            return allViewModels.flatMap { $0 }.count
+        }
+        else {
+            return visibleViewModels.flatMap { $0 }.count
         }
     }
     

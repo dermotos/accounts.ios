@@ -108,6 +108,22 @@ class AccountDataSourceSpec : QuickSpec {
                 expect(dataSource?.viewModel(forGroup: 1, atIndex: 1)).to(beAKindOf(PaymentAccountCellViewModel.self)) // payment account
             }
             
+            it("should correctly report the total number of accounts (all accounts)") {
+                testSavingAccount.isVisible = true
+                testPaymentAccount.isVisible = true
+                secondTestPaymentAccount.isVisible = false
+                let dataSource = AccountDataSource(withAccounts: [testSavingAccount, testPaymentAccount, secondTestPaymentAccount])
+                expect(dataSource!.totalNumberOfAccounts(includingHiddenAccounts: true)).to(equal(3))
+            }
+            
+            it("should correctly report the total number of accounts (visible only accounts)") {
+                testSavingAccount.isVisible = true
+                testPaymentAccount.isVisible = true
+                secondTestPaymentAccount.isVisible = false
+                let dataSource = AccountDataSource(withAccounts: [testSavingAccount, testPaymentAccount, secondTestPaymentAccount])
+                expect(dataSource!.totalNumberOfAccounts(includingHiddenAccounts: false)).to(equal(2))
+            }
+            
 
         }
     }
