@@ -1,18 +1,21 @@
 PODS:
   - Nimble (7.0.3)
   - Quick (1.2.0)
+  - Reveal-SDK (13)
   - SwiftyJSON (4.0.0)
 
 DEPENDENCIES:
   - Nimble (~> 7.0.3)
   - Quick (~> 1.2.0)
+  - Reveal-SDK
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  Reveal-SDK: ccc2b0f8014965ea448b7534a7c2c8da232b75e8
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: 81a91248b7eb60dac7f4a88ef3b5410056f29103
+PODFILE CHECKSUM: ef4f87baefa376a4825d2d04d275323bb4cb7335
 
 COCOAPODS: 1.4.0

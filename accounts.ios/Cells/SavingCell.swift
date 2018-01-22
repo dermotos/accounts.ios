@@ -17,4 +17,6 @@ class SavingCell : UITableViewCell {
     @IBOutlet weak var amountLabel: UILabel!
     @IBOutlet weak var accountNumberLabel: UILabel!
     @IBOutlet weak var ibanLabel: UILabel!
+    @IBOutlet weak var savingTargetLabel: UILabel!
+    @IBOutlet weak var savingProgressIndicator: UIProgressView!
 }

@@ -17,6 +17,7 @@ target 'accounts.ios' do
     use_frameworks!
     
     base_pods
+    pod 'Reveal-SDK', :configurations => ['Debug']
 end
 
 target 'accounts.ios.todayextension' do

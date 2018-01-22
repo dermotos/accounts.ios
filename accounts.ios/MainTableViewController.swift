@@ -146,10 +146,19 @@ class MainTableViewController : UITableViewController {
             cell.amountLabel.text = cellViewModel.formattedBalance
             cell.accountNumberLabel.text = cellViewModel.accountNumber
             cell.ibanLabel.text = cellViewModel.iban
+            if cellViewModel.savingsTargetReached {
+                let targetReachedText = NSLocalizedString("Target Reached", comment: "")
+                cell.savingTargetLabel.text = "\(targetReachedText)! - \(cellViewModel.savingsTargetFormatted)"
+            }
+            else {
+                cell.savingTargetLabel.text = cellViewModel.savingsTargetFormatted
+            }
+            
+            cell.savingProgressIndicator.progress = cellViewModel.percentTowardsTarget
+            
             return cell
         case .creditCard:
             fatalError("Credit cards not supported in this example")
         }
     }
-    
 }

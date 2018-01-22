@@ -41,7 +41,7 @@
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="[AccountName]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hob-MZ-lOd">
                                                                             <rect key="frame" x="0.0" y="0.0" width="359" height="24"/>
-                                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
@@ -130,7 +130,7 @@
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="[AccountName]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2u-hd-Juv">
                                                                             <rect key="frame" x="0.0" y="0.0" width="359" height="24"/>
-                                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
@@ -207,6 +207,7 @@
                                                                         </view>
                                                                     </subviews>
                                                                     <constraints>
+                                                                        <constraint firstItem="I0u-wv-kSz" firstAttribute="width" secondItem="pi2-9q-Rkm" secondAttribute="width" id="P5c-hL-eJf"/>
                                                                         <constraint firstItem="yBx-0t-wJi" firstAttribute="width" secondItem="pi2-9q-Rkm" secondAttribute="width" id="aYh-L3-10Y"/>
                                                                     </constraints>
                                                                 </stackView>
@@ -256,6 +257,8 @@
                                     <outlet property="amountLabel" destination="cp4-fp-OTI" id="fPd-ru-1F6"/>
                                     <outlet property="ibanLabel" destination="BHm-Zm-YsM" id="Qo3-b8-p1j"/>
                                     <outlet property="primaryLabel" destination="Y2u-hd-Juv" id="yTj-sf-9BZ"/>
+                                    <outlet property="savingProgressIndicator" destination="Kho-cs-oVO" id="OiT-p8-7sD"/>
+                                    <outlet property="savingTargetLabel" destination="FdZ-qZ-teq" id="CWh-yz-etc"/>
                                     <outlet property="secondaryLabel" destination="3Of-wa-IQj" id="foT-xX-P6a"/>
                                 </connections>
                             </tableViewCell>
