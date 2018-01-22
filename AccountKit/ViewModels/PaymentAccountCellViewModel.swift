@@ -8,15 +8,15 @@
 
 import Foundation
 
-class PaymentAccountCellViewModel : AccountCellViewModel {
-    var primaryAccountLabelText : String
-    var secondaryAccountLabelText : String
-    var formattedBalance : String
-    var isVisible : Bool
-    var accountNumber : String
-    var iban : String
+public class PaymentAccountCellViewModel : AccountCellViewModel {
+    public var primaryAccountLabelText : String
+    public var secondaryAccountLabelText : String
+    public var formattedBalance : String
+    public var isVisible : Bool
+    public var accountNumber : String
+    public var iban : String
     
-    required init(with account:PaymentAccountProtocol) {
+    required public init(with account:PaymentAccountProtocol) {
     /* we shall assume the following priority for identifying an account from the perspective
         of the user:
         alias, accountName, accountNumber
@@ -44,7 +44,7 @@ class PaymentAccountCellViewModel : AccountCellViewModel {
         formattedBalance = account.balanceInCents.asCurrencyString(forLocale: Locale(identifier: "nl_nl"))
         isVisible = account.isVisible
         accountNumber = account.accountNumber
-        iban = account.iban
+        iban = "IBAN: \(account.iban)"
  
     }
     

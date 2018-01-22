@@ -10,6 +10,7 @@ import Foundation
 import SwiftyJSON
 
 public class PaymentAccount : PaymentAccountProtocol {
+    /** The balance of the account, in cents */
     public var balanceInCents: Int64
     
     public var currency: Currency

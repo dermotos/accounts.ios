@@ -8,22 +8,22 @@
 
 import Foundation
 
-class SavingAccountCellViewModel : AccountCellViewModel {
-    var primaryAccountLabelText : String
-    var secondaryAccountLabelText : String
-    var formattedBalance : String
-    var isVisible : Bool
-    var accountNumber : String
-    var iban : String
-    var linkedAccountNumber : String
-    var productName : String
-    var savingsTargetReached : Bool
-    var savingsTargetFormatted : String
+public class SavingAccountCellViewModel : AccountCellViewModel {
+    public var primaryAccountLabelText : String
+    public var secondaryAccountLabelText : String
+    public var formattedBalance : String
+    public var isVisible : Bool
+    public var accountNumber : String
+    public var iban : String
+    public var linkedAccountNumber : String
+    public var productName : String
+    public var savingsTargetReached : Bool
+    public var savingsTargetFormatted : String
     
-    var percentTowardsTarget : Float
+    public var percentTowardsTarget : Float
     
     
-    required init(with account:SavingAccountProtocol) {
+    required public init(with account:SavingAccountProtocol) {
         /* we shall assume the following priority for identifying an account from the perspective
          of the user:
          alias, accountName, accountNumber
