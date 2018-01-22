@@ -168,30 +168,30 @@
                                                             <rect key="frame" x="0.0" y="119.5" width="359" height="44"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="pi2-9q-Rkm">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="359" height="44"/>
+                                                                    <rect key="frame" x="8" y="0.0" width="343" height="44"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yBx-0t-wJi">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="359" height="21"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="343" height="21"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Saving Progress" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aeq-Wy-NHk">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="80" height="21"/>
                                                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
-                                                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <color key="textColor" red="0.92893719669999997" green="0.43920117619999999" blue="0.1763403714" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saving Progress" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdZ-qZ-teq">
-                                                                                    <rect key="frame" x="80" y="0.0" width="279" height="21"/>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FdZ-qZ-teq">
+                                                                                    <rect key="frame" x="80" y="0.0" width="263" height="21"/>
                                                                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="10"/>
-                                                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <color key="textColor" red="0.92893719669999997" green="0.43920117619999999" blue="0.1763403714" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                             </subviews>
                                                                         </stackView>
                                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I0u-wv-kSz">
-                                                                            <rect key="frame" x="0.0" y="23" width="359" height="21"/>
+                                                                            <rect key="frame" x="0.0" y="23" width="343" height="21"/>
                                                                             <subviews>
-                                                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Kho-cs-oVO">
-                                                                                    <rect key="frame" x="18" y="9.5" width="323" height="2"/>
+                                                                                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.90000000000000002" translatesAutoresizingMaskIntoConstraints="NO" id="Kho-cs-oVO">
+                                                                                    <rect key="frame" x="17" y="9.5" width="309" height="2"/>
                                                                                     <constraints>
                                                                                         <constraint firstAttribute="height" constant="2" id="onZ-hV-Qxn"/>
                                                                                     </constraints>
@@ -211,17 +211,17 @@
                                                                     </constraints>
                                                                 </stackView>
                                                             </subviews>
-                                                            <color key="backgroundColor" red="0.92893719669999997" green="0.76833953481293105" blue="0.74698554740228695" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="backgroundColor" red="0.98526571435866017" green="0.9305170244594092" blue="0.92209414909029364" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <constraints>
-                                                                <constraint firstItem="pi2-9q-Rkm" firstAttribute="leading" secondItem="T8D-0X-6bk" secondAttribute="leading" id="LJj-Yq-9ai"/>
-                                                                <constraint firstAttribute="trailing" secondItem="pi2-9q-Rkm" secondAttribute="trailing" id="Mmp-K4-ZUV"/>
+                                                                <constraint firstItem="pi2-9q-Rkm" firstAttribute="leading" secondItem="T8D-0X-6bk" secondAttribute="leading" constant="8" id="LJj-Yq-9ai"/>
+                                                                <constraint firstAttribute="trailing" secondItem="pi2-9q-Rkm" secondAttribute="trailing" constant="8" id="Mmp-K4-ZUV"/>
                                                                 <constraint firstAttribute="bottom" secondItem="pi2-9q-Rkm" secondAttribute="bottom" id="PwN-Q5-2oH"/>
                                                                 <constraint firstItem="pi2-9q-Rkm" firstAttribute="top" secondItem="T8D-0X-6bk" secondAttribute="top" id="aq1-Mz-nqt"/>
                                                                 <constraint firstAttribute="height" constant="44" id="eF5-fT-hn5"/>
                                                             </constraints>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                                    <real key="value" value="10"/>
+                                                                    <real key="value" value="3"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                         </view>
