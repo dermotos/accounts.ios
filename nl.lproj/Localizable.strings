@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  accounts.ios
+
+  Created by Dermot on 22/1/18.
+  Copyright © 2018 Rocky Desk Creations. All rights reserved.
+ 
+  Localisation is not exhaustive and included for example purposes
+*/
+"Unable to load account information." = "Kan accountgegevens niet laden.";
+"Show hidden accounts" = "Toon verborgen accounts";
+"Hide hidden accounts" = "Verberg verbogen accounts";
+"An Error Occurred" = "Er is een fout opgetreden";
+"OK" = "OK";

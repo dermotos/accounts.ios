@@ -201,7 +201,7 @@
                             <outlet property="delegate" destination="zgA-FZ-b2h" id="Bsz-dc-Z4c"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Accounts" id="U0v-Dg-M7G"/>
+                    <navigationItem key="navigationItem" title="Accounts" largeTitleDisplayMode="always" id="U0v-Dg-M7G"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bw5-Nr-IU2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -217,7 +217,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.92893719673156738" green="0.43920117616653442" blue="0.17634037137031555" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.086938180029392242" green="0.22104647755622864" blue="0.42747330665588379" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>

@@ -79,6 +79,7 @@
 		07F1060820145FB10074D159 /* testpayment.json in Resources */ = {isa = PBXBuildFile; fileRef = 07F1060620145FB10074D159 /* testpayment.json */; };
 		07F1060920145FB80074D159 /* testpayment.json in Resources */ = {isa = PBXBuildFile; fileRef = 07F1060620145FB10074D159 /* testpayment.json */; };
 		07F1060A20145FB80074D159 /* testsaving.json in Resources */ = {isa = PBXBuildFile; fileRef = 07F1060520145FB10074D159 /* testsaving.json */; };
+		07FC6E402015921A00AE8D8F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07FC6E452015921A00AE8D8F /* Localizable.strings */; };
 		0B5121928176C3883ECD2DDA /* Pods_AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000C15F5429C92D46AD38CA8 /* Pods_AccountKit.framework */; };
 		19F1829F60C99234758AAE28 /* Pods_accounts_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB959C73404C7131884D85A /* Pods_accounts_ios.framework */; };
 		3BFEA44004AF3BAE31E2993C /* Pods_accounts_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41B360A065468A2BA9D3D65 /* Pods_accounts_iosTests.framework */; };
@@ -277,6 +278,7 @@
 		07FC6E0A20158D4D00AE8D8F /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Interface.strings; sourceTree = "<group>"; };
 		07FC6E0B20158D4D00AE8D8F /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/MainInterface.strings; sourceTree = "<group>"; };
 		07FC6E2E2015900600AE8D8F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		07FC6E442015921A00AE8D8F /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		150851527CE5C9E3BCAB5353 /* Pods-AccountKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountKitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AccountKitTests/Pods-AccountKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		2AD3D13706C9EC8061574607 /* Pods-AccountKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccountKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AccountKit/Pods-AccountKit.debug.xcconfig"; sourceTree = "<group>"; };
 		35EB2E26FD2BE2E05E09FFFF /* Pods-accounts.iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-accounts.iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-accounts.iosTests/Pods-accounts.iosTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -442,6 +444,7 @@
 		076D0E8920141288001B4DD6 = {
 			isa = PBXGroup;
 			children = (
+				07FC6E452015921A00AE8D8F /* Localizable.strings */,
 				07B727872014B21700DD1622 /* AccountKit */,
 				076D0E9420141289001B4DD6 /* accounts.ios */,
 				076D0EB420141289001B4DD6 /* accounts.iosUITests */,
@@ -916,6 +919,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07FC6E402015921A00AE8D8F /* Localizable.strings in Resources */,
 				076D0EA020141289001B4DD6 /* LaunchScreen.storyboard in Resources */,
 				07B727822014A22200DD1622 /* accounts.json in Resources */,
 				076D0E9D20141289001B4DD6 /* Assets.xcassets in Resources */,
@@ -1475,6 +1479,14 @@
 				07FC6E0B20158D4D00AE8D8F /* nl */,
 			);
 			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		07FC6E452015921A00AE8D8F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07FC6E442015921A00AE8D8F /* nl */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -16,7 +16,7 @@ class MainTableViewController : UITableViewController {
     var dataSource : AccountDataSource!
 
     var toggleButton : UIButton!
-    let buttonText :(toShow:String, toHide :String) = ("Show hidden accounts", "Hide hidden accounts")
+    let buttonText :(toShow:String, toHide :String) = (NSLocalizedString("Show hidden accounts", comment: ""), NSLocalizedString("Hide hidden accounts", comment: ""))
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
@@ -41,13 +41,13 @@ class MainTableViewController : UITableViewController {
                 }
                 else {
                     if let `self` = self {
-                        self.presentError(withMessage: "Unable to load account information.")
+                        self.presentError(withMessage: NSLocalizedString("Unable to load account information.", comment: ""))
                     }
                 }
             }
         }
         catch {
-            presentError(withMessage: "Unable to load account information.")
+            presentError(withMessage: NSLocalizedString("Unable to load account information.", comment: ""))
         }
         
     }
@@ -55,7 +55,7 @@ class MainTableViewController : UITableViewController {
     private func makeFooterView() -> UIView {
         let footerContainerView = UIView()
         let button = UIButton(type: .custom)
-        button.setTitle("Show hidden accounts", for: .normal)
+        button.setTitle(buttonText.toShow, for: .normal)
         button.backgroundColor = .clear
         button.layer.borderColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
         button.layer.borderWidth = 1.5
@@ -102,8 +102,8 @@ class MainTableViewController : UITableViewController {
     }
     
     func presentError(withMessage message:String) {
-        let alert = UIAlertController(title: "An Error Occurred", message: message, preferredStyle: .alert)
-        let okButton = UIAlertAction(title: "OK", style: .default) { (action) in
+        let alert = UIAlertController(title: NSLocalizedString("An Error Occurred", comment: ""), message: message, preferredStyle: .alert)
+        let okButton = UIAlertAction(title: NSLocalizedString("OK", comment: ""), style: .default) { (action) in
             
         }
         alert.addAction(okButton)
