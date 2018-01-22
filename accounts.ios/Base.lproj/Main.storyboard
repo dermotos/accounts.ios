@@ -36,16 +36,16 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="359" height="127.5"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="MtV-oB-RV9">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="359" height="55.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="359" height="48"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="[AccountName]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hob-MZ-lOd">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="359" height="31.5"/>
-                                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="359" height="24"/>
+                                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[SecondaryAccountName]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztl-5x-Qku">
-                                                                            <rect key="frame" x="0.0" y="31.5" width="359" height="24"/>
+                                                                            <rect key="frame" x="0.0" y="24" width="359" height="24"/>
                                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                                                                             <nil key="highlightedColor"/>
@@ -125,16 +125,16 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="359" height="127.5"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="RBq-q7-sop">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="359" height="55.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="359" height="48"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="[AccountName]" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y2u-hd-Juv">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="359" height="31.5"/>
-                                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="359" height="24"/>
+                                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[SecondaryAccountName]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Of-wa-IQj">
-                                                                            <rect key="frame" x="0.0" y="31.5" width="359" height="24"/>
+                                                                            <rect key="frame" x="0.0" y="24" width="359" height="24"/>
                                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                                             <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
                                                                             <nil key="highlightedColor"/>

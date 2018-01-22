@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/** Represents a UITableView cell used to display Saving accounts */
 class SavingCell : UITableViewCell {
     
     @IBOutlet weak var primaryLabel: UILabel!

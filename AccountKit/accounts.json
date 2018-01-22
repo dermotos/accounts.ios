@@ -15,7 +15,7 @@
             "accountBalanceInCents" : 1000000,
             "accountCurrency" : "EUR",
             "accountId" : "700000027559",
-            "accountName" : "Mr Bob",
+            "accountName" : "",
             "accountNumber" : "748757732",
             "accountType" : "PAYMENT",
             "alias" : "",

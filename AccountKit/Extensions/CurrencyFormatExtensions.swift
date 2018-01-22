@@ -10,6 +10,7 @@ import Foundation
 
 extension Int64 {
     
+    /** Formats self as a currency string, based on the Locale passed in */
     public func asCurrencyString(forLocale locale:Locale) -> String {
         let formatter = NumberFormatter()
         formatter.locale = locale

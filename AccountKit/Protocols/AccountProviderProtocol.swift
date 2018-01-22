@@ -11,6 +11,7 @@ import Foundation
 
 public typealias JSONString = String
 
+/** Defines the interface for the AccountProvider */
 public protocol AccountProviderProtocol {
     
     init?(with json:JSONString)

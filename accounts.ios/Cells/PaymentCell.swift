@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/** Represents a UITableView cell used to display Payment accounts */
 class PaymentCell : UITableViewCell {
     
     @IBOutlet weak var primaryLabel: UILabel!

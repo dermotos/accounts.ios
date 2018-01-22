@@ -8,6 +8,7 @@
 
 import Foundation
 
+/** Represents the prepared information displayed in a Payment Account cell */
 public class SavingAccountCellViewModel : AccountCellViewModel {
     public var primaryAccountLabelText : String
     public var secondaryAccountLabelText : String

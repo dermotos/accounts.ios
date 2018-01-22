@@ -9,6 +9,7 @@
 import Foundation
 import SwiftyJSON
 
+/** Handles loading a collection of accounts from JSON and creating objects to represent them */
 public class AccountProvider : AccountProviderProtocol {
     
     let data :JSON

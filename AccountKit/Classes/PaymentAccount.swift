@@ -9,6 +9,7 @@
 import Foundation
 import SwiftyJSON
 
+/** Represents a payment account as loaded from Disk/Network */
 public class PaymentAccount : PaymentAccountProtocol {
     /** The balance of the account, in cents */
     public var balanceInCents: Int64

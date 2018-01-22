@@ -9,6 +9,7 @@
 import Foundation
 import SwiftyJSON
 
+/** Represents a saving account as loaded from Disk/Network */
 public class SavingAccount : SavingAccountProtocol {
     public var balanceInCents: Int64
     

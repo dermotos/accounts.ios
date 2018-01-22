@@ -8,6 +8,7 @@
 
 import Foundation
 
+/** Abstract representation of an AccountCell View Model */
 public protocol AccountCellViewModel {
     var primaryAccountLabelText : String { get set }
     var secondaryAccountLabelText : String { get set }

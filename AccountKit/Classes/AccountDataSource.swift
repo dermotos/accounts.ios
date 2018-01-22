@@ -8,7 +8,9 @@
 
 import Foundation
 
-public protocol AccountDataSourceProtocol : class {
+/** Defines the interface of the AccountDataSource. The interface is similar to a UITableViewDataSource, making
+    It easy to integrate with CollectionViews and TableViews */
+public protocol AccountDataSourceProtocol : AnyObject {
     
     init?(withAccounts accounts:[AccountProtocol])
     
@@ -21,6 +23,7 @@ public protocol AccountDataSourceProtocol : class {
     
 }
 
+/** Provides view models to a view controller for rendering */
 public class AccountDataSource : AccountDataSourceProtocol {
     private lazy var visibleViewModels = [[AccountCellViewModel]]()
     private lazy var visibleAccountTypes = [AccountType]()
