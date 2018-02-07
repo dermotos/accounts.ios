@@ -36,7 +36,7 @@
             "productName" : "Oranje Spaarrekening",
             "productType" : 1000,
             "savingsTargetReached" : 1,
-            "targetAmountInCents" : 2000
+            "targetAmountInCents" : 20000
         }
     ],
     "failedAccountTypes" : "CREDITCARDS",

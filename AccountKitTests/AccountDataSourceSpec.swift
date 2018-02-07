@@ -28,6 +28,7 @@ class AccountDataSourceSpec : QuickSpec {
             do {
                 let text = try String(contentsOfFile: filePath!)
                 let json = JSON(parseJSON: text)
+                
                 testSavingAccount = SavingAccount(withJSON: json)
             }
             catch {
